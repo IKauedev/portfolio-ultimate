@@ -231,7 +231,7 @@ export const projects = [
     description:
       "Esse projeto teve como objetivo consumir uma API feita no wordpress é também fazer com que usuario se cadastra-se no sistema e pode-se publicar imagens do seus pets dentro da aplicação funcionando de forma dinamica! dentro da aplicação tanto para adicionar como remover.",
     image:
-      "...",
+      "./project/images/dog.png",
     tags: [
       "React.js",
       "Java Script",
