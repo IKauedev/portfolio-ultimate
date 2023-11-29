@@ -47,8 +47,8 @@ export function ProjectDetails({ openModal, setOpenModal }) {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        <Button dull href={project?.github} target='new'>Visualizar Código</Button>
+                        <Button href={project?.webapp} target='new'>Visualizar Projeto</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
