@@ -1,5 +1,5 @@
 export const Bio = {
-  name: "Kauê Matos",
+  name: "Kauê de Matos",
   roles: [
     "Desenvolvedor Back-end",
     "Programador",
@@ -208,9 +208,9 @@ export const projects = [
   {
     id: 1,
     title: "Cooffe Delivery",
-    date: "Oct 2022 - Present",
+    date: "set 2023 - nov 2023",
     description:
-      "....",
+      "Esse projeto foi desáfio proposto pela ROCKETSEAT plataforma de cursos profissionalizantes focados em front-end e back-end, basicamente a aplicação tem como foco simular um ecommerce tendo a opção de escolha de método de pagamento e também de confirmação pedido entre outras coisas.",
     image:
       "https://reactjsexample.com/content/images/2022/08/Code-2022-10-17-42.jpg",
     tags: [
@@ -229,7 +229,7 @@ export const projects = [
     title: "Dog",
     date: "Jan 2023 - Mar 2023",
     description:
-      "...",
+      "Esse projeto teve como objetivo consumir uma API feita no wordpress é também fazer com que usuario se cadastra-se no sistema e pode-se publicar imagens do seus pets dentro da aplicação funcionando de forma dinamica! dentro da aplicação tanto para adicionar como remover.",
     image:
       "...",
     tags: [
@@ -247,7 +247,7 @@ export const projects = [
     title: "Desáfio PicPay",
     date: "Dec 2021 - Apr 2022",
     description:
-      "...",
+      "Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa PicPay basicamente o objetivo principal do projeto era desenvolver um API REST onde simulava alguns serviços de transação,deposito e etc contudo ele também mostraria feedback para usuario conforme a confirmação! de sucesso.",
     image:
       "https://logodownload.org/wp-content/uploads/2018/05/picpay-logo-3.png",
     tags: [
@@ -263,7 +263,7 @@ export const projects = [
     title: "Desáfio Uber",
     date: "Jun 2023 - Jul 2023",
     description:
-      "...",
+      "Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa UBER basicamente o objetivo principal era utilizar um serviço da AWS (SES) para enviar emails para usuarios cadastrados simulando um microserviço.",
     image:
       "https://www.webdesignerdepot.com/cdn-origin/uploads/2018/09/uber_logo.png",
     tags: [
