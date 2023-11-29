@@ -244,7 +244,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Desáfio PicPay",
+    title: "Desafio PicPay",
     date: "Dec 2021 - Apr 2022",
     description:
       "Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa PicPay basicamente o objetivo principal do projeto era desenvolver um API REST onde simulava alguns serviços de transação,deposito e etc contudo ele também mostraria feedback para usuario conforme a confirmação! de sucesso.",
@@ -260,7 +260,7 @@ export const projects = [
   },
   {
     id: 10,
-    title: "Desáfio Uber",
+    title: "Desafio Uber",
     date: "Jun 2023 - Jul 2023",
     description:
       "Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa UBER basicamente o objetivo principal era utilizar um serviço da AWS (SES) para enviar emails para usuarios cadastrados simulando um microserviço.",
