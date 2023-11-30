@@ -185,22 +185,43 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Plataforma de agricultura orgânica",
+    date: "Jun 2023 - Jul 2023",
+    description:
+      "Projeto desenvolvido utilizando Java JDK (17), em conjunto com Azure para hospedagem do banco de dados mysql, javascript e jquery para consumo de API via CEP e apache Tomcat para hospedagem local da aplicação e TailwindCss, Bootstrap para estilização",
+    image:
+      "https://i.postimg.cc/J02WM17c/Screenshot-2023-11-30-183357.png",
+    tags: [
+      "Java",
+      "Azure",
+      "JSP",
+      "Servlet",
+      "Mysql"
+    ],
+    category: "Back-end",
+    github: "https://github.com/iKaueMatos/javaWebapp-organic-agriculture",
+    webapp: "https://webappjava1.azurewebsites.net/Apsjava3/index.jsp",
+  },
+  {
+    id: 3,
     title: "Cooffe Delivery",
     date: "set 2023 - nov 2023",
     description:
       "Esse projeto foi desáfio proposto pela ROCKETSEAT plataforma de cursos profissionalizantes focados em front-end e back-end, basicamente a aplicação tem como foco simular um ecommerce tendo a opção de escolha de método de pagamento e também de confirmação pedido entre outras coisas.",
-    image:
+      image:
       "https://reactjsexample.com/content/images/2022/08/Code-2022-10-17-42.jpg",
-    tags: [
+      tags: [
       "React Js",
-      "TypeScript"
+      "TypeScript",
+      "Styled components",
+      "react notify"
     ],
     category: "web app",
     github: "https://github.com/iKaueMatos/cofee-delivery",
     webapp: "https://cofee-delivery-omega.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Dog",
     date: "Jan 2023 - Mar 2023",
     description:
@@ -218,7 +239,7 @@ export const projects = [
     webapp: "https://dogs-react-kappa.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Desafio PicPay",
     date: "Dec 2021 - Apr 2022",
     description:
@@ -234,7 +255,7 @@ export const projects = [
     webapp: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Desafio Uber",
     date: "Jun 2023 - Jul 2023",
     description:
