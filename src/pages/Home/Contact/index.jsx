@@ -15,27 +15,83 @@ import {
 
 export function Contact() {
   const [open, setOpen] = React.useState(false);
+  const [emailError, setEmailError] = React.useState(false);
+  const [nameError, setNameError] = React.useState(false);
+  const [subjectError, setSubjectError] = React.useState(false);
+  const [messageError, setMessageError] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
-        form.current,
-        "SybVGsYS52j2TfLbi"
-      )
-      .then(
-        (result) => {
-          setOpen(true);
-          form.current.reset();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+
+    if (validateForm()) {
+      emailjs
+        .sendForm(
+          "service_tox7kqs",
+          "template_nv7k7mj",
+          form.current,
+          "SybVGsYS52j2TfLbi"
+        )
+        .then(
+          (result) => {
+            setOpen(true);
+            form.current.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
+
+  function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  function validateName(name) {
+    const nameRegex = /^[a-zA-Z\s]+$/;
+    return nameRegex.test(name);
+  }
+
+  function validateSubject(subject) {
+    const subjectRegex = /\S+/;
+    return subjectRegex.test(subject);
+  }
+
+  function validateForm() {
+    let isValid = true;
+
+    if (!validateEmail(form.current.from_email.value)) {
+      setEmailError(true);
+      isValid = false;
+    } else {
+      setEmailError(false);
+    }
+
+    if (!validateName(form.current.from_name.value)) {
+      setNameError(true);
+      isValid = false;
+    } else {
+      setNameError(false);
+    }
+
+    if (!validateSubject(form.current.subject.value)) {
+      setSubjectError(true);
+      isValid = false;
+    } else {
+      setSubjectError(false);
+    }
+
+    if (!form.current.message.value.trim()) {
+      setMessageError(true);
+      isValid = false;
+    } else {
+      setMessageError(false);
+    }
+
+    return isValid;
+  }
 
   return (
     <Container>
@@ -47,10 +103,27 @@ export function Contact() {
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Envie um Email 🚀</ContactTitle>
-          <ContactInput placeholder="Digite seu E-mail" name="from_email" />
-          <ContactInput placeholder="Digite seu nome" name="from_name" />
-          <ContactInput placeholder="Assunto" name="subject" />
-          <ContactInputMessage placeholder="Mensagem" rows="4" name="message" />
+          <ContactInput
+            placeholder="Digite seu E-mail"
+            name="from_email"
+            error={emailError}
+          />
+          <ContactInput
+            placeholder="Digite seu nome"
+            name="from_name"
+            error={nameError}
+          />
+          <ContactInput
+            placeholder="Assunto"
+            name="subject"
+            error={subjectError}
+          />
+          <ContactInputMessage
+            placeholder="Mensagem"
+            rows="4"
+            name="message"
+            error={messageError}
+          />
           <ContactButton type="submit" value="Enviar" />
         </ContactForm>
         <Snackbar

@@ -80,11 +80,11 @@ export const SkillTitle = styled.h2`
 `
 
 export const SkillList = styled.div`
-  display: flex;
-  justify-content: center; 
-  flex-wrap: wrap;
   gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  justify-content: center;
 `
 
 export const SkillItem = styled.div`
