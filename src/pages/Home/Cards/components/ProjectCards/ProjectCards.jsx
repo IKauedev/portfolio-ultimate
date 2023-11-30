@@ -1,6 +1,7 @@
 import React from 'react'
 import {
     Avatar,
+    Button,
     Card,
     Date,
     Description,
@@ -31,6 +32,7 @@ export function ProjectCards({project,setOpenModal}) {
                     <Avatar src={member.img}/>
                 ))}
             </Members>
+            <Button>Clique Aqui</Button>
         </Card>
     )
 }

@@ -6,8 +6,6 @@ import {
   FooterContainer,
   FooterWrapper,
   Logo,
-  Nav,
-  NavLink,
   SocialMediaIcon,
   SocialMediaIcons
 } from '.';
@@ -18,13 +16,6 @@ export function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <Logo>Ikaue</Logo>
-        <Nav>
-          <NavLink href="#about">Sobre min</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experiência</NavLink>
-          <NavLink href="#projects">Projetos</NavLink>
-          <NavLink href="#education">Formação Acadêmica</NavLink>
-        </Nav>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedInIcon />
