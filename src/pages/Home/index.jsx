@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Footer } from "../../components/Footer/index.jsx";
 import { Body } from "../../layout/defaultLayout/components/index.js";
+import { Certification } from "./Certification/index.jsx";
 import { Contact } from "./Contact/index.jsx";
 import { Education } from "./Education/index.jsx";
 import { Experience } from "./Experience/index.jsx";
@@ -29,6 +30,7 @@ export function Home() {
             <Projects openModal={openModal} setOpenModal={setOpenModal} />
             <Wrapper>
                 <Education />
+                <Certification />
                 <Contact />
             </Wrapper>
             <Footer />

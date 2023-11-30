@@ -19,7 +19,7 @@ export function Projects({openModal,setOpenModal}) {
       <Wrapper>
         <Title>Projetos</Title>
         <Desc>
-          Venha conhecer os meus projetos desenvolvidos ao longo desse tempo.
+          Venha conhecer os meus projetos desenvolvidos ao longo desse tempo de estudos.
         </Desc>
         <ToggleButtonGroup >
           {toggle === 'all' ?

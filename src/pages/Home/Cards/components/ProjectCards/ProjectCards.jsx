@@ -31,7 +31,6 @@ export function ProjectCards({project,setOpenModal}) {
                     <Avatar src={member.img}/>
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }
