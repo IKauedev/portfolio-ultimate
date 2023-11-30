@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
 import React, { useRef } from "react";
+import { EMAIL_TEMPLATE_SERVICE, EMAIL_TOKEN, EMAIL_TOKEN_SERVICE } from "../../../constants/BASE_API_EMAIL";
 import {
   ContactButton,
   ContactForm,
@@ -27,10 +28,10 @@ export function Contact() {
     if (validateForm()) {
       emailjs
         .sendForm(
-          "service_tox7kqs",
-          "template_nv7k7mj",
+          EMAIL_TOKEN_SERVICE,
+          EMAIL_TEMPLATE_SERVICE,
           form.current,
-          "SybVGsYS52j2TfLbi"
+          EMAIL_TOKEN
         )
         .then(
           (result) => {
@@ -102,7 +103,7 @@ export function Contact() {
           oportunidades!
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Envie um Email 🚀</ContactTitle>
+          <ContactTitle>Envie um Email! 🚀</ContactTitle>
           <ContactInput
             placeholder="Digite seu E-mail"
             name="from_email"
@@ -124,13 +125,13 @@ export function Contact() {
             name="message"
             error={messageError}
           />
-          <ContactButton type="submit" value="Enviar" />
+          <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
           onClose={() => setOpen(false)}
-          message="Email sent successfully!"
+          message="Email enviado com sucesso!"
           severity="success"
         />
       </Wrapper>

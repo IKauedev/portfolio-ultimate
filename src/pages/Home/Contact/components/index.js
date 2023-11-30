@@ -99,7 +99,7 @@ export const ContactInputMessage = styled.textarea`
   }
 `
 
-export const ContactButton = styled.input`
+export const ContactButton = styled.button`
   width: 100%;
   text-decoration: none;
   text-align: center;
@@ -115,4 +115,5 @@ export const ContactButton = styled.input`
   font-size: 18px;
   font-weight: 600;
   transition-duration: 3s;
+  cursor: pointer;
 `
