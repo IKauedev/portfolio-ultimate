@@ -89,6 +89,7 @@ export const ContactInputMessage = styled.textarea`
   flex: 1;
   background-color: transparent;
   border: 1px solid ${({ theme }) => theme.text_secondary};
+  border-color: ${({ theme, error }) => (error ? 'red' : theme.text_secondary)};
   outline: none;
   font-size: 18px;
   color: ${({ theme }) => theme.text_primary};

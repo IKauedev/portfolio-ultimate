@@ -133,6 +133,7 @@ export function Contact() {
           onClose={() => setOpen(false)}
           message="Email enviado com sucesso!"
           severity="success"
+          style={{background:"white", color:"black"}}
         />
       </Wrapper>
     </Container>
