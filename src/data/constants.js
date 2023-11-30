@@ -122,7 +122,7 @@ export const experiences = [
   {
     id: 1,
     img: "https://media.licdn.com/dms/image/D4D0BAQFSEbmwaeNAUw/company-logo_200_200/0/1683928977056/liberoprofessionista_logo?e=1709164800&v=beta&t=32kz9sP6x5TXS1PqxXn1v4hsSI4SXl0loSWpgguYmgc",
-    role: "Free lancer",
+    role: "Freelancer",
     company: "",
     date: "Fev 2023 - Atual",
     desc: "Como desenvolvedor back-end, juntamente com outros desenvolvedores foi acordado uma criação de um website para uma microempresa da região",
@@ -208,9 +208,6 @@ export const projects = [
       "React Js",
       "Redis",
       "Mysql",
-      "Spring Boot",
-      "Spring Security",
-      "Spring Data JPA"
     ],
     category: "web app",
     github: "https://github.com/iKaueMatos/Nova-Software",
@@ -226,9 +223,6 @@ export const projects = [
       "https://reactjsexample.com/content/images/2022/08/Code-2022-10-17-42.jpg",
     tags: [
       "React Js",
-      "Styled Components",
-      "CSS3",
-      "HTML",
       "TypeScript"
     ],
     category: "web app",
@@ -292,7 +286,7 @@ export const projects = [
 export const certifications = [
   {
     id: 1,
-    title: "Programação em Java",
+    title: "Java",
     date: "Fev 2023 - Ago 2023",
     description:
       "Explorei as complexidades do Java, uma linguagem de programação versátil adequada para diversas necessidades de desenvolvimento de aplicativos. Cobriu tópicos como JPA, Spring Boot, Lambdas e Stream API.",
@@ -321,9 +315,9 @@ export const certifications = [
   {
     id: 3,
     title: "Microsserviços com Spring Cloud",
-    date: "Fev 2023 - Ago 2023",
+    date: "Nov 2023 - Nov 2023",
     description:
-      "Implementou uma arquitetura de microsserviços usando o Spring Cloud, aprimorando a escalabilidade e resiliência de uma plataforma de E-commerce projetada para atender a diversas necessidades comerciais.",
+      "Implementei uma arquitetura de microsserviços usando o Spring Cloud, aprimorando a escalabilidade e resiliência de uma plataforma de E-commerce projetada para atender a diversas necessidades comerciais.",
     image:
       "https://i.postimg.cc/267wQqNT/UC-3ae769ca-d185-458d-aa7c-d71a6aa561df.jpg",
     tags: [
@@ -335,7 +329,7 @@ export const certifications = [
     title: "JavaScript ES6",
     date: "Fev 2023 - Ago 2023",
     description:
-      "Explorou os recursos avançados do JavaScript (ES6) e os aplicou no desenvolvimento de uma plataforma de E-commerce dinâmica, incorporando HTML, CSS e Ajax para uma experiência do usuário perfeita.",
+      "Exploreo os recursos avançados do JavaScript (ES6) e os apliquei no desenvolvimento de uma plataforma de E-commerce dinâmica, incorporando HTML, CSS e Ajax para uma experiência do usuário perfeita.",
     image:
       "https://i.postimg.cc/cHF31fSq/Screenshot-2023-11-30-at-07-46-40-doc-pdf.png",
     tags: [
@@ -347,10 +341,10 @@ export const certifications = [
   },
   {
     id: 5,
-    title: "Fundamentos do Docker",
-    date: "Fev 2023 - Ago 2023",
+    title: "Docker para Desenvolvedores",
+    date: "jun 2023 - Nov 2023",
     description:
-      "Dominou os fundamentos do Docker, aprimorando habilidades em containerização para otimizar implantação e gerenciamento de aplicativos em diversos ambientes de computação.",
+      "Nesse curso estudei os fundamentos do Docker, aprimorando habilidades em containerização para otimizar implantação e gerenciamento de aplicativos em diversos ambientes de computação.",
     image:
       "https://i.postimg.cc/gjq2kWRx/Screenshot-2023-11-30-074814.png",
     tags: [
@@ -359,10 +353,10 @@ export const certifications = [
   },
   {
     id: 6,
-    title: "Noções Básicas de Linux",
-    date: "Fev 2023 - Ago 2023",
+    title: "Linux",
+    date: "Fev 2023 - Abril 2023",
     description:
-      "Adquiriu conhecimentos fundamentais de Linux e operações no terminal, essenciais para o desenvolvimento eficiente de software e administração do sistema.",
+      "Adquiri conhecimentos fundamentais de Linux e operações no terminal, essenciais para o desenvolvimento eficiente de software e administração do sistema.",
     image:
       "https://i.postimg.cc/85FV0Vw2/Screenshot-2023-11-30-075251.png",
     tags: [
@@ -373,9 +367,9 @@ export const certifications = [
   {
     id: 7,
     title: "Modelagem de Banco de Dados",
-    date: "Fev 2023 - Ago 2023",
+    date: "Abr 2023 - Man 2023",
     description:
-      "Desenvolveu habilidades em modelagem de banco de dados, essenciais para criar estruturas eficientes no MySQL e compreender a modelagem do banco de dados.",
+      "Nesse curso tive opotunidade de desenvolver as minhas habilidades em modelagem de banco de dados, essenciais para criar estruturas eficientes no MySQL e compreender a modelagem do banco de dados.",
     image:
       "https://i.postimg.cc/jS9w1RhT/Screenshot-2023-11-30-075102.png",
     tags: [
@@ -386,9 +380,9 @@ export const certifications = [
   {
     id: 8,
     title: "SQL",
-    date: "Fev 2023 - Ago 2023",
+    date: "Aug 2023 - Set 2023",
     description:
-      "Aprimorou suas habilidades em SQL, aplicando consultas eficientes no MySQL para otimizar o acesso e manipulação de dados em bancos de dados relacionais.",
+      "Nesse curso tive a oportunidade de desenvolver minhas habilidades em SQL, aplicando consultas eficientes no MySQL para otimizar o acesso e manipulação de dados em bancos de dados relacionais.",
     image:
       "https://i.postimg.cc/1t7KCk4N/Screenshot-2023-11-30-074944.png",
     tags: [

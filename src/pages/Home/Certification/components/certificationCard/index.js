@@ -96,8 +96,8 @@ export const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 99};
     margin-top: 8px;
-    display: -webkit-box;
     max-width: 100%;
+    text-align: left;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;

@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Button = styled.button`
-    display: none;
     width: 100%;
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
@@ -13,9 +12,10 @@ export const Button = styled.button`
     cursor: pointer;
     transition: all 0.8s ease-in-out;
 `
+
 export const Card = styled.div`
     width: 330px;
-    height: 490px;
+    height: 520px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;

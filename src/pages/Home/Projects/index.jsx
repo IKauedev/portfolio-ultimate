@@ -27,7 +27,6 @@ export function Projects({openModal,setOpenModal}) {
             :
             <ToggleButton value="all" onClick={() => setToggle('all')}>Todos</ToggleButton>
           }
-          <Divider />
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === 'all' && projects
