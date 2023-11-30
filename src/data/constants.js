@@ -272,6 +272,23 @@ export const projects = [
     github: "https://github.com/iKaueMatos/uber-challenge",
     webapp: false,
   },
+  {
+    id: 6,
+    title: "Delivery (Restaurante Comercial)",
+    date: "Jun 2023 - Agu 2023",
+    description:
+      "Esse projeto foi desenvolvido com intuito de consumir API REST onde fornece os produtos para sua rederização na pagina, contudo a versão apresentada e versão estatica e pouco antiga por conta versão atual projeto e para um cliente.",
+    image:
+      "https://i.postimg.cc/wvcJBQvF/imagem.png",
+    tags: [
+      "React.js",
+      "Tailwind CSS",
+      "JavaScript"
+    ],
+    category: "Front-end",
+    github: "https://github.com/iKaueMatos/Delivery",
+    webapp: "https://delivery-react-gp4llt9kh-ikauematos.vercel.app/",
+  },
 ];
 
 export const certifications = [
