@@ -227,7 +227,7 @@ export const projects = [
     ],
     category: "web app",
     github: "https://github.com/iKaueMatos/cofee-delivery",
-    webapp: false,
+    webapp: "https://cofee-delivery-omega.vercel.app/",
   },
   {
     id: 3,
@@ -259,7 +259,7 @@ export const projects = [
       "Spring Boot",
       "Java",
     ],
-    category: "Back end",
+    category: "Back-end",
     github: "https://github.com/iKaueMatos/picpay-challenge",
     webapp: false,
   },
@@ -277,7 +277,7 @@ export const projects = [
       "AWS",
       "SES"
     ],
-    category: "Back end",
+    category: "Back-end",
     github: "https://github.com/iKaueMatos/uber-challenge",
     webapp: false,
   },
@@ -390,13 +390,4 @@ export const certifications = [
       "SQL"
     ],
   },
-];
-
-//certificações inicio
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
 ];
