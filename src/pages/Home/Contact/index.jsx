@@ -16,16 +16,21 @@ import {
 
 export function Contact() {
   const [open, setOpen] = React.useState(false);
-  const [emailError, setEmailError] = React.useState(false);
-  const [nameError, setNameError] = React.useState(false);
-  const [subjectError, setSubjectError] = React.useState(false);
-  const [messageError, setMessageError] = React.useState(false);
+  const [errors, setErrors] = React.useState({
+    email: false,
+    name: false,
+    subject: false,
+    message: false,
+  });
+
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (validateForm()) {
+    const validationErrors = validateForm();
+
+    if (Object.values(validationErrors).every((error) => !error)) {
       emailjs
         .sendForm(
           EMAIL_TOKEN_SERVICE,
@@ -61,37 +66,16 @@ export function Contact() {
   }
 
   function validateForm() {
-    let isValid = true;
+    const validationErrors = {
+      email: !validateEmail(form.current.from_email.value),
+      name: !validateName(form.current.from_name.value),
+      subject: !validateSubject(form.current.subject.value),
+      message: !form.current.message.value.trim(),
+    };
 
-    if (!validateEmail(form.current.from_email.value)) {
-      setEmailError(true);
-      isValid = false;
-    } else {
-      setEmailError(false);
-    }
+    setErrors(validationErrors);
 
-    if (!validateName(form.current.from_name.value)) {
-      setNameError(true);
-      isValid = false;
-    } else {
-      setNameError(false);
-    }
-
-    if (!validateSubject(form.current.subject.value)) {
-      setSubjectError(true);
-      isValid = false;
-    } else {
-      setSubjectError(false);
-    }
-
-    if (!form.current.message.value.trim()) {
-      setMessageError(true);
-      isValid = false;
-    } else {
-      setMessageError(false);
-    }
-
-    return isValid;
+    return validationErrors;
   }
 
   return (
@@ -107,24 +91,28 @@ export function Contact() {
           <ContactInput
             placeholder="Digite seu E-mail"
             name="from_email"
-            error={emailError}
+            error={errors.emailError}
           />
+          {errors.email && <div style={{ color: "red" }}>Email inválido</div>}
           <ContactInput
             placeholder="Digite seu nome"
             name="from_name"
-            error={nameError}
+            error={errors.nameError}
           />
+          {errors.name && <div style={{ color: "red" }}>Nome inválido</div>}
           <ContactInput
             placeholder="Assunto"
             name="subject"
-            error={subjectError}
+            error={errors.subject}
           />
+          {errors.subject && <div style={{ color: "red" }}>Assunto inválido</div>}
           <ContactInputMessage
             placeholder="Mensagem"
             rows="4"
             name="message"
-            error={messageError}
+            error={errors.message}
           />
+          {errors.message && <div style={{ color: "red" }}>Messagem inválida</div>}
           <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
         <Snackbar
