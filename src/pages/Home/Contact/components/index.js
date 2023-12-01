@@ -115,6 +115,10 @@ export const ContactButton = styled.button`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
-  transition-duration: 3s;
+  transition: all 0.2s ease;
   cursor: pointer;
+
+  :active {
+    transform: scale(0.80);
+  }
 `
