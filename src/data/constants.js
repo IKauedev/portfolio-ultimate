@@ -180,7 +180,7 @@ export const projects = [
       "Mysql",
     ],
     category: "web app",
-    github: "https://github.com/iKaueMatos/Nova-Software",
+    github: "https://github.com/orgs/Nova-Software-Organization/repositories",
     webapp: false,
   },
   {
