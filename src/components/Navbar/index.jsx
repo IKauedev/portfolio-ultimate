@@ -45,7 +45,7 @@ export function Navbar() {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">Sobre Min</NavLink>
+          <NavLink href="#about">Sobre Mim</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
@@ -65,7 +65,7 @@ export function Navbar() {
                 setIsOpen(!isOpen);
               }}
             >
-              Sobre Min
+              Sobre Mim
             </MobileLink>
             <MobileLink
               href="#skills"
