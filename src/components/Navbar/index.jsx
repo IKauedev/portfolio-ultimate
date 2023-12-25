@@ -100,7 +100,7 @@ export function Navbar() {
               Formação acâdemica
             </MobileLink>
             <MobileLink
-              to="/artigos"
+              href="/artigos"
               onClick={() => {
                 setIsOpen(!isOpen);
               }}

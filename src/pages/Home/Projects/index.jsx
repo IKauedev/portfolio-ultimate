@@ -5,7 +5,6 @@ import {
   CardContainer,
   Container,
   Desc,
-  Divider,
   Title,
   ToggleButton,
   ToggleButtonGroup,
@@ -34,7 +33,7 @@ export function Projects({openModal,setOpenModal}) {
               <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
           {projects
-            .filter((item) => item.category == toggle)
+            .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
