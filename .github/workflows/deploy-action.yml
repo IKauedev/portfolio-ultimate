@@ -2,7 +2,7 @@ name: Deploy React App via FTP
 on:
   push:
     branches:
-      - Portfolio-2023
+      - Portfolio
 
 jobs:
   deploy:
@@ -26,8 +26,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./build
-          remoteDir: public_html
+          host: ${{ secrets.HOST }}
+          user: ${{ secrets.USER }}
+          password: ${{ secrets.PASS }}
+          local-dir: ./build
+          remote-dir: public_html
