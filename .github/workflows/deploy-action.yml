@@ -15,4 +15,3 @@ jobs:
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
           localDir: "dist"
-          server-dist: public_html/
