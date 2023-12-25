@@ -29,5 +29,5 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
-          local-dir: ./build
-          remote-dir: public_html
+          localDir: ./build
+          remoteDir: public_html
