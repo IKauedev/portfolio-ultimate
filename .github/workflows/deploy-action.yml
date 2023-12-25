@@ -2,7 +2,7 @@ name: Deploy React App via FTP
 on:
   push:
     branches:
-      - Portfolio
+      - Portfolio-2023
 
 jobs:
   deploy:
