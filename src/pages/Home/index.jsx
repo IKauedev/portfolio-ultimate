@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Footer } from "../../components/Footer/index.jsx";
 import { Body } from "../../layout/defaultLayout/components/index.js";
 import { Certification } from "./Certification/index.jsx";
 import { Contact } from "./Contact/index.jsx";

@@ -30,12 +30,12 @@ export function Projects({openModal,setOpenModal}) {
         <CardContainer>
           {toggle === 'all' && projects
             .map((project) => (
-              <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+              <ProjectCards key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
           {projects
             .filter((item) => item.category === toggle)
             .map((project) => (
-              <ProjectCards project={project} openModal={openModal} setOpenModal={setOpenModal}/>
+              <ProjectCards key={project.id} project={project} openModal={openModal} setOpenModal={setOpenModal}/>
             ))}
         </CardContainer>
       </Wrapper>

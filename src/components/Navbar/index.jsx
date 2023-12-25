@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 import { useTheme } from "styled-components";
 import {
   ButtonContainer,
@@ -24,7 +25,7 @@ export function Navbar() {
     <Nav>
       <NavbarContainer>
         <NavLogo to="/">
-          <a
+          <Link
             style={{
               display: "flex",
               alignItems: "center",
@@ -35,7 +36,7 @@ export function Navbar() {
           >
             <img src={Logo} alt="" style={{ width: "50px", height: "50px" }} />
             <Span>IKauê</Span>
-          </a>
+          </Link>
         </NavLogo>
         <MobileIcon>
           <FaBars
