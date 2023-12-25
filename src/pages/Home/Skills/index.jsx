@@ -1,15 +1,15 @@
-import { skills } from "../../../data/constants";
+import { skills } from "../../../data/skills";
 import {
-    Container,
-    Desc,
-    Skill,
-    SkillImage,
-    SkillItem,
-    SkillList,
-    SkillTitle,
-    SkillsContainer,
-    Title,
-    Wrapper
+  Container,
+  Desc,
+  Skill,
+  SkillImage,
+  SkillItem,
+  SkillList,
+  SkillTitle,
+  SkillsContainer,
+  Title,
+  Wrapper
 } from "./components";
 
 export function Skills() {
@@ -21,11 +21,11 @@ export function Skills() {
           </Desc>
           <SkillsContainer>
             {skills.map((skill) => (
-              <Skill>
+              <Skill key={skill.id}>
                 <SkillTitle>{skill.title}</SkillTitle>
                 <SkillList>
                   {skill.skills.map((item) => (
-                    <SkillItem>
+                    <SkillItem key={skill.id}>
                       <SkillImage src={item.image}/>
                       {item.name}
                     </SkillItem>

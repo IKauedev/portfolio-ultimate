@@ -5,7 +5,8 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import React from "react";
-import { education, experiences } from "../../../data/constants";
+import { education } from "../../../data/education.js";
+import { experiences } from "../../../data/experiences.js";
 import { EducationCard } from "../Cards/components/EducationCard/EducationCard";
 import { Container, Desc, TimelineSection, Title, Wrapper } from "./components";
 

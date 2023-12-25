@@ -9,7 +9,7 @@ import {
   SocialMediaIcon,
   SocialMediaIcons
 } from '.';
-import { Bio } from '../../data/constants';
+import { Bio } from '../../data/bio.js';
 
 export function Footer() {
   return (

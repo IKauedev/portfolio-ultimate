@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { projects } from '../../../data/constants';
+import { projects } from '../../../data/project.js';
 import { ProjectCards } from '../Cards/components/ProjectCards/ProjectCards';
 import {
   CardContainer,

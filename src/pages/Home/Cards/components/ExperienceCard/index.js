@@ -109,7 +109,7 @@ export const Company = styled.div`
     }
 `
 
-export const Date = styled.div`
+export const ExperienceDate = styled.div`
     font-size: 12px;
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary + 80};

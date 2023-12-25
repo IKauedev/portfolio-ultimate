@@ -1,4 +1,4 @@
-import { certifications } from '../../../data/constants';
+import { certifications } from '../../../data/certifications.js';
 import { CardContainer, Container, Desc, Title, Wrapper } from "./components";
 import { CertificationCard } from "./components/certificationCard/index.jsx";
 
@@ -13,7 +13,7 @@ export function Certification() {
                 <CardContainer>
                 {certifications
                     .map((certification) => (
-                    <CertificationCard certification={certification} />
+                    <CertificationCard key={certification.id} certification={certification} />
                 ))}
                 </CardContainer>
             </Wrapper>

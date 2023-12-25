@@ -1,0 +1,108 @@
+export const certifications = [
+    {
+      id: 1,
+      title: "Java",
+      date: "Fev 2023 - Ago 2023",
+      description:
+        "Explorei as complexidades do Java, uma linguagem de programação versátil adequada para diversas necessidades de desenvolvimento de aplicativos. Cobriu tópicos como JPA, Spring Boot, Lambdas e Stream API.",
+      image:
+        "https://i.postimg.cc/mrPb0Mgp/Screenshot-2023-11-30-075554.png",
+      tags: [
+        "Java",
+        "JPA",
+        "Spring Boot",
+        "Lambdas",
+        "Stream API",
+      ],
+    },
+    {
+      id: 2,
+      title: "Java e Spring Boot",
+      date: "Fev 2023 - Ago 2023",
+      description:
+        "Com esse curso explorei as complexidades do java utilizando o spring boot e aplique os conhecimentos em mini projeto utilizando conceitos de API REST",
+      image:
+        "https://i.postimg.cc/MZcHfC0f/Screenshot-2023-11-30-at-07-42-40-Kaue-de-Matos-Oliveira-Forma-o-Java-e-Spring-Boot-Alura-cer.png",
+      tags: [
+        "Docker",
+      ],
+    },
+    {
+      id: 3,
+      title: "Microsserviços com Spring Cloud",
+      date: "Nov 2023 - Nov 2023",
+      description:
+        "Implementei uma arquitetura de microsserviços usando o Spring Cloud, aprimorando a escalabilidade e resiliência de uma plataforma de E-commerce projetada para atender a diversas necessidades comerciais.",
+      image:
+        "https://i.postimg.cc/267wQqNT/UC-3ae769ca-d185-458d-aa7c-d71a6aa561df.jpg",
+      tags: [
+        "Docker",
+      ],
+    },
+    {
+      id: 4,
+      title: "JavaScript ES6",
+      date: "Fev 2023 - Ago 2023",
+      description:
+        "Exploreo os recursos avançados do JavaScript (ES6) e os apliquei no desenvolvimento de uma plataforma de E-commerce dinâmica, incorporando HTML, CSS e Ajax para uma experiência do usuário perfeita.",
+      image:
+        "https://i.postimg.cc/cHF31fSq/Screenshot-2023-11-30-at-07-46-40-doc-pdf.png",
+      tags: [
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Ajax",
+      ],
+    },
+    {
+      id: 5,
+      title: "Docker para Desenvolvedores",
+      date: "jun 2023 - Nov 2023",
+      description:
+        "Nesse curso estudei os fundamentos do Docker, aprimorando habilidades em containerização para otimizar implantação e gerenciamento de aplicativos em diversos ambientes de computação.",
+      image:
+        "https://i.postimg.cc/gjq2kWRx/Screenshot-2023-11-30-074814.png",
+      tags: [
+        "Docker",
+      ],
+    },
+    {
+      id: 6,
+      title: "Linux",
+      date: "Fev 2023 - Abril 2023",
+      description:
+        "Adquiri conhecimentos fundamentais de Linux e operações no terminal, essenciais para o desenvolvimento eficiente de software e administração do sistema.",
+      image:
+        "https://i.postimg.cc/85FV0Vw2/Screenshot-2023-11-30-075251.png",
+      tags: [
+        "Linux",
+        "Terminal"
+      ],
+    },
+    {
+      id: 7,
+      title: "Modelagem de Banco de Dados",
+      date: "Abr 2023 - Man 2023",
+      description:
+        "Nesse curso tive opotunidade de desenvolver as minhas habilidades em modelagem de banco de dados, essenciais para criar estruturas eficientes no MySQL e compreender a modelagem do banco de dados.",
+      image:
+        "https://i.postimg.cc/jS9w1RhT/Screenshot-2023-11-30-075102.png",
+      tags: [
+        "MySQL",
+        "Modelagem do banco de dados"
+      ],
+    },
+    {
+      id: 8,
+      title: "SQL",
+      date: "Aug 2023 - Set 2023",
+      description:
+        "Nesse curso tive a oportunidade de desenvolver minhas habilidades em SQL, aplicando consultas eficientes no MySQL para otimizar o acesso e manipulação de dados em bancos de dados relacionais.",
+      image:
+        "https://i.postimg.cc/1t7KCk4N/Screenshot-2023-11-30-074944.png",
+      tags: [
+        "MySQL",
+        "SQL"
+      ],
+    },
+  ];
