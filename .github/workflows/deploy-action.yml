@@ -26,8 +26,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          host: ${{ secrets.HOST }}
-          user: ${{ secrets.USER }}
+          server: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
-          localDir: ./build
-          remoteDir: public_html
+          local-dir: ./build
+          server-dir: public_html
