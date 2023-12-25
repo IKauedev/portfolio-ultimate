@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
     Body,
     Card,
@@ -12,7 +12,7 @@ import {
     Skills,
     Span,
     Top,
-} from '.';
+} from ".";
 
 export function ExperienceCard({ experience }) {
   return (
@@ -22,16 +22,15 @@ export function ExperienceCard({ experience }) {
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
-          <ExperienceDate>{experience.date}</ExperienceDate> {/* Utilizando ExperienceDate em vez de Date */}
+          <ExperienceDate>{experience.date}</ExperienceDate>
         </Body>
       </Top>
       <Description>
         {experience?.desc && <Span>{experience?.desc}</Span>}
         {experience?.skills && (
           <>
-            <br />
+          <br/>
             <Skills>
-              <b>Skills:</b>
               <ItemWrapper>
                 {experience?.skills?.map((skill, index) => (
                   <Skills>• {skill}</Skills>
@@ -42,7 +41,7 @@ export function ExperienceCard({ experience }) {
         )}
       </Description>
       {experience.doc && (
-        <a href={experience.doc} target="_blank" rel="noopener noreferrer">
+        <a href={experience.doc} target="new">
           <Document src={experience.doc} />
         </a>
       )}

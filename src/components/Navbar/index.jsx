@@ -42,7 +42,6 @@ export function Navbar() {
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#education">Formação Acadêmica</NavLink>
-          <NavLink href="/artigos">Artigos</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
@@ -56,7 +55,6 @@ export function Navbar() {
             <MobileLink href="#experience" onClick={() => setIsOpen(!isOpen)}>Experiência</MobileLink>
             <MobileLink href="#projects" onClick={() => setIsOpen(!isOpen)}>Projetos</MobileLink>
             <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>Formação Acadêmica</MobileLink>
-            <MobileLink href="/artigos" onClick={() => setIsOpen(!isOpen)}>Artigos</MobileLink>
             <GitHubButton
               style={{
                 padding: "10px 16px",

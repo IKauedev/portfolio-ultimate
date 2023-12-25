@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button, Container, NotFouldText, Title } from "./components";
 
-export function NotFould() {
+export function NotFound() {
   return (
     <Container>
       <NotFouldText>404</NotFouldText>
