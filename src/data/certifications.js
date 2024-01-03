@@ -105,4 +105,18 @@ export const certifications = [
         "SQL"
       ],
     },
+    {
+      id: 9,
+      title: "Node.js",
+      date: "Aug 2023 - jan 2024",
+      description:
+        "Nesse curso tive a oportunidade de desenvolver minhas habilidades em nodejs, principalmente em teste unitarios e em teste de integração com jest, contudo também tive a oportunidade de ver como a design patters DDD e estrutura na aplicação e o seu respectivo objetivo.",
+      image:
+        "https://i.postimg.cc/2jtgRP91/Screenshot-from-2024-01-03-14-15-26.png",
+      tags: [
+        "Nodejs",
+        "Typescript",
+        "jest"
+      ],
+    },
   ];
