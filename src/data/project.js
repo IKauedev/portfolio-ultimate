@@ -37,7 +37,7 @@ export const projects = [
         "Servlet",
         "Mysql"
       ],
-      category: "Back-end",
+      category: "backend",
       github: "https://github.com/iKaueMatos/javaWebapp-organic-agriculture",
       webapp: "https://webappjava1.azurewebsites.net/Apsjava3/index.jsp",
     },
@@ -46,7 +46,7 @@ export const projects = [
       title: "Cooffe Delivery",
       date: "set 2023 - nov 2023",
       description:
-        "Esse projeto foi desáfio proposto pela ROCKETSEAT plataforma de cursos profissionalizantes focados em front-end e back-end, basicamente a aplicação tem como foco simular um ecommerce tendo a opção de escolha de método de pagamento e também de confirmação pedido entre outras coisas.",
+        "Esse projeto foi desáfio proposto pela ROCKETSEAT plataforma de cursos profissionalizantes focados em front-end e backend, basicamente a aplicação tem como foco simular um ecommerce tendo a opção de escolha de método de pagamento e também de confirmação pedido entre outras coisas.",
         image:
         "https://reactjsexample.com/content/images/2022/08/Code-2022-10-17-42.jpg",
         tags: [
@@ -55,7 +55,7 @@ export const projects = [
         "Styled components",
         "react notify"
       ],
-      category: "web app",
+      category: "frontend",
       github: "https://github.com/iKaueMatos/cofee-delivery",
       webapp: "https://cofee-delivery-omega.vercel.app/",
     },
@@ -73,7 +73,7 @@ export const projects = [
         "CSS3",
         "HTML"
       ],
-      category: "Front-end",
+      category: "frontend",
       github: "https://github.com/iKaueMatos/dogs.react",
       webapp: "https://dogs-react-kappa.vercel.app/",
     },
@@ -89,7 +89,7 @@ export const projects = [
         "Spring Boot",
         "Java",
       ],
-      category: "Back-end",
+      category: "backend",
       github: "https://github.com/iKaueMatos/picpay-challenge",
       webapp: false,
     },
@@ -107,7 +107,7 @@ export const projects = [
         "AWS",
         "SES"
       ],
-      category: "Back-end",
+      category: "backend",
       github: "https://github.com/iKaueMatos/uber-challenge",
       webapp: false,
     },
@@ -124,7 +124,7 @@ export const projects = [
         "Tailwind CSS",
         "JavaScript"
       ],
-      category: "Front-end",
+      category: "frontend",
       github: "https://github.com/iKaueMatos/Delivery",
       webapp: "https://delivery-react-gp4llt9kh-ikauematos.vercel.app/",
     },

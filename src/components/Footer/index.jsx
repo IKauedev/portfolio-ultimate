@@ -1,15 +1,15 @@
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import React from 'react';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import React from "react";
 import {
   Copyright,
   FooterContainer,
   FooterWrapper,
   Logo,
   SocialMediaIcon,
-  SocialMediaIcons
-} from '.';
-import { Bio } from '../../data/bio.js';
+  SocialMediaIcons,
+} from ".";
+import { Bio } from "../../data/bio.js";
 
 export function Footer() {
   return (

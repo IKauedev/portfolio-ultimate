@@ -6,8 +6,8 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import React from "react";
 import { experiences } from "../../../data/experiences.js";
-import { ExperienceCard } from "../Cards/components/ExperienceCard/ExperienceCard";
-import { Container, Desc, TimelineSection, Title, Wrapper } from "./components";
+import { ExperienceCard } from "../Cards/components/ExperienceCard/ExperienceCard.jsx";
+import { Container, Desc, TimelineSection, Title, Wrapper } from "./components/index.js";
 
 export function Experience() {
   return (

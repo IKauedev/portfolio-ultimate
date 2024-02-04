@@ -1,13 +1,13 @@
+import { RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import './App.css';
-import LayoutRouter from "./router/router.jsx";
-import { darkTheme } from './utils/Themes.js';
+import './global.css';
+import { darkTheme } from "./pages/_layout/themes/Themes.js";
+import { routes } from "./router/routes.jsx";
 
-export default function App() {
-
+export function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <LayoutRouter />
+       <RouterProvider router={routes} />
     </ThemeProvider>
   );
 }

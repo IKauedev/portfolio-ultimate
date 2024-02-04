@@ -7,8 +7,8 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import React from "react";
 import { education } from "../../../data/education.js";
 import { experiences } from "../../../data/experiences.js";
-import { EducationCard } from "../Cards/components/EducationCard/EducationCard";
-import { Container, Desc, TimelineSection, Title, Wrapper } from "./components";
+import { EducationCard } from "../Cards/components/EducationCard/EducationCard.jsx";
+import { Container, Desc, TimelineSection, Title, Wrapper } from "./components/index.js";
 
 export function Education() {
   return (

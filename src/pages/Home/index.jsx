@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Body } from "../../layout/defaultLayout/components/index.js";
+import { Body } from "../_layout/defaultLayout/index.js";
 import { Certification } from "./Certification/index.jsx";
 import { Contact } from "./Contact/index.jsx";
 import { Education } from "./Education/index.jsx";
