@@ -1,9 +1,9 @@
 import React from "react";
 import { MdDownload } from "react-icons/md";
 import Typewriter from "typewriter-effect";
+import profile from "../../../assets/images/profile.jpg";
 import { Bio } from "../../../data/bio.js";
-import profile from "../../../images/profile.jpg";
-import HeroBgAnimation from "../HeroBgAnimation";
+import HeroBgAnimation from "../HeroBgAnimation/index.jsx";
 
 import {
   HeroBg,
@@ -17,7 +17,7 @@ import {
   SubTitle,
   TextLoop,
   Title,
-} from "./components";
+} from "./components/index.js";
 
 export function HeroSection() {
   return (
