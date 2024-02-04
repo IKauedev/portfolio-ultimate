@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTheme } from "styled-components";
@@ -17,8 +17,8 @@ import {
   Span,
 } from ".";
 
+import Logo from "../../assets/images/favicon.png";
 import { Bio } from "../../data/bio.js";
-import Logo from "../../images/favicon.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

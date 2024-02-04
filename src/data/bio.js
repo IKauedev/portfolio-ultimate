@@ -9,5 +9,5 @@ export const Bio = {
     github: "https://github.com/iKaueMatos",
     resume: "https://drive.google.com/file/d/1NivSpo7kSD7dvcmPJyeyywzQoiR_jxVo/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ikauematos/",
-    insta: "https://www.instagram.com/ikauecode/",
+    insta: "https://www.instagram.com/ikauedev/",
   };
