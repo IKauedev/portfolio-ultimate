@@ -10,4 +10,5 @@ export const Bio = {
     resume: "https://drive.google.com/file/d/1NivSpo7kSD7dvcmPJyeyywzQoiR_jxVo/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ikauematos/",
     insta: "https://www.instagram.com/ikauedev/",
+    dev: "https://i.postimg.cc/xT3x9Dkw/icons8-desenvolvedor-64.png"
   };

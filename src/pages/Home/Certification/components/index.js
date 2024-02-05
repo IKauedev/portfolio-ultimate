@@ -124,4 +124,8 @@ export const Button = styled.button`
     :active {
       transform: scale(0.80);
     }
-`; 
+
+    @media (max-width: 748px) {
+        width: 38%;
+    }
+`;

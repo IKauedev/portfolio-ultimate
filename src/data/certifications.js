@@ -119,4 +119,19 @@ export const certifications = [
         "jest"
       ],
     },
+    {
+      id: 9,
+      title: "Microservices with Spring Boot, Spring Cloud, Docker, K8s",
+      date: "jan - fev 2024",
+      description:
+        "Nesse curso desenvolvi um projeto prático, onde me possibilitou conhecer como realmente um arquitetura de microserviços pode ser estruturada e como isso se comporta em produção.",
+      image:
+        "https://i.postimg.cc/5t0wcDvS/Captura-de-tela-de-2024-02-05-06-52-29.png",
+      tags: [
+        "Java",
+        "Docker",
+        "GitHub",
+        "Mysql"
+      ],
+    },
   ];

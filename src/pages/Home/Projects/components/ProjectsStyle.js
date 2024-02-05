@@ -120,8 +120,12 @@ export const Button = styled.button`
     font-weight: 600;
     transition: all 0.2s ease;
     cursor: pointer;
-  
+
     :active {
       transform: scale(0.80);
     }
-`; 
+
+    @media (max-width: 748px) {
+        width: 38%;
+    }
+`;

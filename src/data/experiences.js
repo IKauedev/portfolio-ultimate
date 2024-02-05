@@ -19,7 +19,7 @@ export const experiences = [
     },
     {
       id: 2,
-      img: "https://media.licdn.com/dms/image/C4D0BAQHIxakbMNFpow/company-logo_200_200/0/1630581110181/liveecommerce_logo?e=1709164800&v=beta&t=gVgmSQ0Vzf9kSCWBt3bzWtbPaYJMi4ZKl8x7mniECu0",
+      img: "https://i.postimg.cc/qR4pYHW1/logo-live-ecommerce.jpg",
       role: "Estagiario de Desenvolvimento Back-end",
       company: "Live Ecommerce",
       date: "Jan 2023 - Dez - 2023",

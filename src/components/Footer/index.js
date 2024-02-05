@@ -63,7 +63,7 @@ export const SocialMediaIcons = styled.div`
 export const SocialMediaIcon = styled.a`
   display: inline-block;
   margin: 0 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
   &:hover {
