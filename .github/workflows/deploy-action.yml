@@ -31,5 +31,5 @@ jobs:
           host: ${{ secrets.HOST }}
           user: ${{ secrets.USER }}
           password: ${{ secrets.PASS }}
-          localDir: ./build
+          localDir: ../../build
           remoteDir: public_html
