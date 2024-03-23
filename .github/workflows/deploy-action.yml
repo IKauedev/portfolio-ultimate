@@ -3,7 +3,7 @@ name: 🚀 Deploy website on push
 on:
   push:
     branches:
-      - Portfolio-2023      
+      - portfolio-2023      
 
 jobs:
   web-deploy:
