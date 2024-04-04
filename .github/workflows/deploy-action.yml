@@ -27,8 +27,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.novasoftwaresolutions.com.br
-          username: novasoftwaresolu1
+          server: ftp.ikauedev.com.br
+          username: ikauedev1
           password: ${{ secrets.PASS }}
           local-dir: ./build/
           server-dir: public_html/
