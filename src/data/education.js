@@ -28,7 +28,7 @@ export const education = [
     img: "https://i.postimg.cc/PqzmcpTJ/Flm3-C31j-400x400.jpg",
     school: "Wish Up",
     date: "mar 2024 - mar 2025",
-    desc: "",
+    desc: "A wish e uma escola totalmente digital onde fornece a aprendizagem do inglês aplicado na prática em situações reais de acordo com tema escolhido.",
     degree: "English, English Language and Literature/Letters",
   },
 ];
