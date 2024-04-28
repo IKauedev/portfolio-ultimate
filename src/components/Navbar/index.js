@@ -2,6 +2,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.div`
+    top: 0;
     background-color: ${({theme}) => theme.card_light};
     height: 80px;
     display: flex;
@@ -9,12 +10,13 @@ export const Nav = styled.div`
     justify-content: center;
     font-size: 1rem;
     position: sticky;
-    top: 0;
     z-index: 10;
     @media (max-width: 960px) {
-        trastion: 0.8s all ease;
+        transition: 0.8s all ease;
+        background: ${({theme}) => theme.black};
     }
 `;
+
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -43,6 +45,11 @@ export const Span = styled.div`
     font-weight: bold;
     font-size: 18px;
     text-decoration:none;
+    color: ${({ theme }) => theme.black};
+
+    @media (max-width: 960px) {
+      color: ${({theme}) => theme.white};
+    }
 `;
 
 export const NavItems = styled.ul`
@@ -54,6 +61,7 @@ export const NavItems = styled.ul`
     padding: 0 6px;
     list-style: none;
     white-space: nowrap;
+    color:${({ theme }) => theme.black};
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -66,6 +74,8 @@ export const NavLink = styled.a`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    color:${({ theme }) => theme.black};
+
     :hover {
       color: ${({ theme }) => theme.primary};
     }
@@ -83,7 +93,7 @@ export const GitHubButton = styled.a`
   align-items: center;
   height: 70%;
   border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.black};
   cursor: pointer;
   padding: 0 20px;
   font-weight: 500;
@@ -94,6 +104,7 @@ export const GitHubButton = styled.a`
       background: ${({ theme }) => theme.primary};
       color: ${({ theme }) => theme.white};
     }
+
     @media screen and (max-width: 768px) { 
     font-size: 14px;
     }
@@ -122,7 +133,11 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.5rem;
     cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
+    color: ${({ theme }) => theme.black};
+
+    @media (max-width: 960px) {
+      color: ${({theme}) => theme.white};
+    }
   }
 `
 
@@ -136,14 +151,13 @@ export const MobileMenu = styled.div`
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light};
+    background: ${({ theme }) => theme.black};
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
-
 `
 
 export const MobileMenuItems = styled.ul`

@@ -1,24 +1,24 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import {
-    Body,
-    Card,
-    Company,
-    Description,
-    Document,
-    ExperienceDate,
-    Image,
-    ItemWrapper,
-    Role,
-    Skills,
-    Span,
-    Top,
+  Body,
+  Card,
+  Company,
+  Description,
+  Document,
+  ExperienceDate,
+  Image,
+  ItemWrapper,
+  Role,
+  Skills,
+  Span,
+  Top,
 } from ".";
 
 export function ExperienceCard({ experience }) {
   return (
     <Card>
       <Top>
-        <Image src={experience.img} />
+        <Image src={experience.img} alt="Experience" />
         <Body>
           <Role>{experience.role}</Role>
           <Company>{experience.company}</Company>
@@ -29,11 +29,12 @@ export function ExperienceCard({ experience }) {
         {experience?.desc && <Span>{experience?.desc}</Span>}
         {experience?.skills && (
           <>
-          <br/>
+            <br />
             <Skills>
+              <h5>Habilidades Adiquiridas: </h5>
               <ItemWrapper>
                 {experience?.skills?.map((skill, index) => (
-                  <Skills>• {skill}</Skills>
+                  <Skills key={index}>• {skill}</Skills>
                 ))}
               </ItemWrapper>
             </Skills>
@@ -41,9 +42,9 @@ export function ExperienceCard({ experience }) {
         )}
       </Description>
       {experience.doc && (
-        <a href={experience.doc} target="new">
-          <Document src={experience.doc} />
-        </a>
+        <Link to={experience.doc} target="_blank">
+          <Document src={experience.doc} alt="Document" />
+        </Link>
       )}
     </Card>
   );

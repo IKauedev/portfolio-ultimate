@@ -27,6 +27,7 @@ export const certifications = [
         "Docker",
       ],
     },
+    
     {
       id: 3,
       title: "Microsserviços com Spring Cloud",

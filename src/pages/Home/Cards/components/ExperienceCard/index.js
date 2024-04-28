@@ -18,6 +18,8 @@ export const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_primary + 99};
     margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -124,6 +126,7 @@ export const Skills = styled.div`
     display: flex;
     gap: 12px;
     margin-top: -10px;
+    flex-direction: column;
 `
 
 export const ItemWrapper = styled.div`

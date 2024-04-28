@@ -1,4 +1,3 @@
-
 export const experiences = [
   {
     id: 1,
@@ -6,7 +5,7 @@ export const experiences = [
     role: "Co-fundador & Desenvolvedor Back-end",
     company: "Nova Software",
     date: "Set 2023 - Atual",
-    desc: "Como Co-fundador da Nova Software e também desenvolvedor, estou em uma posição única que permite entender tanto os aspectos estratégicos e de negócios quanto os aspectos técnicos do desenvolvimento do software está sendo um desafio muito gratificante, por me dar a capacidade de desenvolver um produto onde irei fornecer para diversos usuários e cumprir com proposito real, Ademais a Nova software tem objetivo de fornecer serviços para um usuário que deseja começar no ramo de vendas online prevendo até mesmo situações do dia a dia.",
+    desc: "Como Co-fundador da Nova Software e também desenvolvedor, estou em uma posição única que permite entender tanto os aspectos estratégicos e de negócios quanto os aspectos técnicos do desenvolvimento de software. Está sendo um desafio muito gratificante, pois me dá a capacidade de desenvolver um produto onde irei fornecer para diversos usuários e cumprir com propósito real. Além disso, a Nova Software tem o objetivo de fornecer serviços para um usuário que deseja começar no ramo de vendas online, prevendo até mesmo situações do dia a dia.",
     skills: [
       "Docker",
       "AWS",
@@ -19,10 +18,20 @@ export const experiences = [
   {
     id: 2,
     img: "https://i.postimg.cc/qR4pYHW1/logo-live-ecommerce.jpg",
-    role: "Estagiario de Desenvolvimento Back-end",
+    role: "Estagiário de Desenvolvimento Back-end",
     company: "Live Ecommerce",
-    date: "Jan 2023 - Dez - 2023",
-    desc: "Durante minha experiência, atuei na implementação de novas funcionalidades e na resolução de problemas por meio de desenvolvimento back-end em PHP, em conjunto com tecnologias como JavaScript com jQuery, HTML e CSS. Meu trabalho envolveu aprimorar o desempenho e a usabilidade de sistemas, contribuindo para a melhoria contínua do software.",
+    date: "Jan 2023 - Dez 2023",
+    desc: "Estágio Essencial no Desenvolvimento do Sistema Live Ecommerce:\n" +
+          " - Contribuí significativamente na manutenção e implementação de novas funcionalidades no sistema Live Ecommerce, e desempenhando um papel crucial no progresso e na inovação do projeto.\n\n" +
+          "Tecnologias Utilizadas:\n" +
+          " - Domínio de diversas tecnologias, incluindo PHP, HTML, CSS (especificamente SCSS) e JavaScript, fundamentais para a criação e aprimoramento do sistema.\n\n" +
+          "Experiências Adquiridas:\n" +
+          " - Aprendizado e aplicação de padrões de projeto, com foco especial em Domain-Driven Design (DDD), garantindo uma arquitetura robusta e escalável.\n" +
+          " - Proficiência no uso do PHP em conjunto com o framework interno da empresa, Akuma, para o desenvolvimento ágil e eficiente de novas funcionalidades.\n" +
+          " - Experiência prática com serviços da AWS (Amazon Web Services), proporcionando conhecimento valioso sobre computação em nuvem e infraestrutura escalável.\n" +
+          " - Participação ativa em práticas de integração contínua (CI) e entrega contínua (CD), utilizando ferramentas como Bitbucket, para garantir a qualidade e a eficiência do processo de desenvolvimento.\n" +
+          " - Aplicação da metodologia Kanban para o gerenciamento eficaz de tarefas e fluxo de trabalho, garantindo uma abordagem colaborativa e focada em resultados.\n" +
+          " - Habilidades sólidas em HTML, CSS e JavaScript (incluindo jQuery), essenciais para a criação de interfaces intuitivas e responsivas, proporcionando uma experiência de usuário excepcional no Live Ecommerce.",
     skills: [
       "PHP",
       "HTML",
@@ -33,12 +42,26 @@ export const experiences = [
   {
     id: 3,
     img: "https://i.postimg.cc/1tKmgcQx/decco.png",
-    role: "Auxiliar de Logistica",
-    company: "Delute Comercial",
+    role: "Auxiliar de Logística",
+    company: "Shop Lingerie",
     date: "Out 2021 - Atual",
-    desc: "Como uma pessoa que trabalhou como auxiliar de logística em seu primeiro emprego, adquiri valiosas experiências e desenvolvi habilidades essenciais para o setor. Durante esse período, desempenhei um papel fundamental no suporte às atividades logísticas diárias da empresa Minhas principais responsabilidades incluíam o recebimento, armazenamento e expedição de mercadorias. Trabalhei em estreita colaboração com a equipe para garantir que os produtos fossem corretamente identificados, embalados e registrados em sistemas de gerenciamento de estoque. Além disso, também auxiliei na organização do armazém, realizando inventários periódicos e mantendo a área de trabalho limpa e segura. Durante o período em que trabalhei como auxiliar de logística, desenvolvi habilidades de comunicação eficaz e trabalho em equipe. Foi essencial manter uma comunicação clara com os membros da equipe e com outros departamentos, a fim de garantir uma coordenação adequada das atividades logísticas.",
+    desc: "Cadastro de Produtos em Marketplaces:\n" +
+          " - Upload e atualização de informações de produtos em diferentes plataformas de vendas online, como Mercado Livre, Amazon, B2W, entre outros.\n" +
+          " - Garantia de que os produtos estejam corretamente categorizados, com descrições precisas e imagens de alta qualidade.\n" +
+          " - Gerenciamento de catálogos de produtos, incluindo adição, edição e remoção conforme necessário.\n\n" +
+          "Gerenciamento de ERPs (Ideris):\n" +
+          " - Utilização e configuração de sistemas de gestão empresarial, como o Ideris, para otimizar processos internos relacionados a estoque, pedidos e logística.\n" +
+          " - Integração do ERP com os marketplaces para garantir uma sincronização eficiente de dados em tempo real.\n\n" +
+          "Análise de SEO (Search Engine Optimization):\n" +
+          " - Identificação e análise de palavras-chave relevantes para os produtos, utilizando ferramentas de pesquisa e análise de tendências.\n" +
+          " - Otimização de descrições de produtos e metadados para melhorar o ranking nos resultados de busca.\n" +
+          " - Monitoramento contínuo de métricas de desempenho, como tráfego orgânico, taxas de conversão e posicionamento nos motores de busca.\n\n" +
+          "Melhoria de Processos e Eficiência Operacional:\n" +
+          " - Identificação de oportunidades para automação de tarefas repetitivas, reduzindo o tempo e os recursos necessários para realizar atividades rotineiras.\n" +
+          " - Implementação de melhores práticas para aumentar a eficiência na gestão de estoque, processamento de pedidos e envio de produtos.\n" +
+          " - Colaboração com outras equipes, como marketing e atendimento ao cliente, para garantir uma experiência integrada e consistente para os clientes.",
     skills: [
-      "Marketing",
+      "Marketing", "SEO (Search Engine Otimization), VBA (Excel), Python"
     ]
   },
 ];

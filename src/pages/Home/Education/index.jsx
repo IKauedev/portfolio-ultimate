@@ -4,7 +4,6 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import React from "react";
 import { education } from "../../../data/education.js";
 import { experiences } from "../../../data/experiences.js";
 import { EducationCard } from "../Cards/components/EducationCard/EducationCard.jsx";
@@ -22,7 +21,7 @@ export function Education() {
         <TimelineSection>
           <Timeline>
             {education.map((education, index) => (
-              <TimelineItem>
+              <TimelineItem >
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
                   <EducationCard education={education} />
                 </TimelineContent>
