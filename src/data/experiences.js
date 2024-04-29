@@ -41,9 +41,9 @@ export const experiences = [
   },
   {
     id: 3,
-    img: "https://i.postimg.cc/1tKmgcQx/decco.png",
+    img: "https://i.postimg.cc/4dLNwBsX/363833807-122085334292552-290342790524188251-n.jpg",
     role: "Auxiliar Administrativo",
-    company: "Shop Lingerie",
+    company: "Delute Comercial",
     date: "Out 2021 - Atual",
     desc: "Cadastro de Produtos em Marketplaces:\n" +
           " - Upload e atualização de informações de produtos em diferentes plataformas de vendas online, como Mercado Livre, Amazon, B2W, entre outros.\n" +
