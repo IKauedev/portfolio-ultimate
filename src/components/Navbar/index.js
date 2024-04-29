@@ -1,20 +1,20 @@
-import { Link as LinkR } from 'react-router-dom';
-import styled from 'styled-components';
+import { Link as LinkR } from "react-router-dom";
+import styled from "styled-components";
 
 export const Nav = styled.div`
-    top: 0;
-    background-color: ${({theme}) => theme.card_light};
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    position: sticky;
-    z-index: 10;
-    @media (max-width: 960px) {
-        transition: 0.8s all ease;
-        background: ${({theme}) => theme.black};
-    }
+  top: 0;
+  background-color: ${({ theme }) => theme.card_light};
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: sticky;
+  z-index: 10;
+  @media (max-width: 960px) {
+    transition: 0.8s all ease;
+    background: ${({ theme }) => theme.black};
+  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -29,62 +29,71 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    width: 80%;
-    padding: 0 6px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    text-decoration: none;
-    @media (max-width: 640px) {
-      padding: 0 0px;
+  width: 80%;
+  padding: 0 6px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+  @media (max-width: 640px) {
+    padding: 0 0px;
   }
 `;
 
 export const Span = styled.div`
-    padding: 0 4px;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration:none;
-    color: ${({ theme }) => theme.black};
+  padding: 0 4px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: ${({ theme }) => theme.black};
 
-    @media (max-width: 960px) {
-      color: ${({theme}) => theme.white};
-    }
+  @media (max-width: 960px) {
+    color: ${({ theme }) => theme.white};
+  }
 `;
 
 export const NavItems = styled.ul`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    gap: 32px;
-    padding: 0 6px;
-    list-style: none;
-    white-space: nowrap;
-    color:${({ theme }) => theme.black};
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 6px;
+  list-style: none;
+  white-space: nowrap;
+  color: ${({ theme }) => theme.black};
 
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LogoImg = styled.img`
+  width: 50px;
+  height: 50px;
+  filter: brightness(0);
+
+  @media (max-width: 960px) {
+    filter: brightness(1);
+  }
 `;
 
 export const NavLink = styled.a`
-    color: ${({ theme }) => theme.text_primary};
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    color:${({ theme }) => theme.black};
+  color: ${({ theme }) => theme.text_primary};
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: ${({ theme }) => theme.black};
 
-    :hover {
-      color: ${({ theme }) => theme.primary};
-    }
+  :hover {
+    color: ${({ theme }) => theme.primary};
+  }
 
-    &.active {
-      border-bottom: 2px solid ${({ theme }) => theme.primary};
-    }
+  &.active {
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  }
 `;
-
 
 export const GitHubButton = styled.a`
   border: 1.8px solid ${({ theme }) => theme.primary};
@@ -100,18 +109,18 @@ export const GitHubButton = styled.a`
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
-    :hover {
-      background: ${({ theme }) => theme.primary};
-      color: ${({ theme }) => theme.white};
-    }
+  :hover {
+    background: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
+  }
 
-    @media screen and (max-width: 768px) { 
+  @media screen and (max-width: 768px) {
     font-size: 14px;
-    }
+  }
 `;
 
 export const ButtonContainer = styled.div`
-  width: 80%;  
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: end;
@@ -121,7 +130,6 @@ export const ButtonContainer = styled.div`
     display: none;
   }
 `;
-
 
 export const MobileIcon = styled.div`
   display: none;
@@ -136,29 +144,30 @@ export const MobileIcon = styled.div`
     color: ${({ theme }) => theme.black};
 
     @media (max-width: 960px) {
-      color: ${({theme}) => theme.white};
+      color: ${({ theme }) => theme.white};
     }
   }
-`
+`;
 
 export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.black};
-    transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
-`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  padding: 12px 40px 24px 40px;
+  background: ${({ theme }) => theme.black};
+  transition: all 0.6s ease-in-out;
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateY(0)" : "translateY(-100%)"};
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+`;
 
 export const MobileMenuItems = styled.ul`
   display: flex;
@@ -169,7 +178,7 @@ export const MobileMenuItems = styled.ul`
   list-style: none;
   width: 100%;
   height: 100%;
-`
+`;
 
 export const MobileMenuLink = styled(LinkR)`
   color: ${({ theme }) => theme.text_primary};
@@ -207,7 +216,7 @@ export const MobileMenuButton = styled.a`
   }
 `;
 
-export  const MobileLink = styled.a`
+export const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;

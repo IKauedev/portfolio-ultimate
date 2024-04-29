@@ -6,6 +6,7 @@ import { useTheme } from "styled-components";
 import {
   ButtonContainer,
   GitHubButton,
+  LogoImg,
   MobileIcon,
   MobileLink,
   MobileMenu,
@@ -22,29 +23,7 @@ import { Bio } from "../../data/bio.js";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [brightnessFilter, setBrightnessFilter] = useState("brightness(0)");
   const theme = useTheme();
-
-  const applyBrightnessFilter = () => {
-    const width = window.innerWidth;
-    if (width <= 960) {
-      return "brightness(1)";
-    } else {
-      return "brightness(0)";
-    }
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setBrightnessFilter(applyBrightnessFilter());
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <Nav>
@@ -60,14 +39,9 @@ export function Navbar() {
               textDecoration: "none",
             }}
           >
-            <img
+            <LogoImg
               src={Logo}
               alt="Logo"
-              style={{
-                width: "50px",
-                height: "50px",
-                filter: brightnessFilter,
-              }}
             />
             <Span>IKauê</Span>
           </Link>
