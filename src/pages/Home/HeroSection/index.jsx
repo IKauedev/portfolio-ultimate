@@ -1,4 +1,3 @@
-import React from "react";
 import { MdDownload } from "react-icons/md";
 import Typewriter from "typewriter-effect";
 import profile from "../../../assets/images/profile.jpg";
