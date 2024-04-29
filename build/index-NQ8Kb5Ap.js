@@ -1337,7 +1337,7 @@ margin-top: 12px;
 `,RE=Tm.img`
   width: 24px;
   height: 24px;
-`;function AE(){return Y.jsx(kE,{id:"skills",children:Y.jsxs(SE,{children:[Y.jsx(EE,{children:"Skills"}),Y.jsx(CE,{children:"Aqui estão algumas das minhas habilidades nas quais tenho trabalhado nos últimos 2 anos."}),Y.jsx(jE,{children:wE.map((e=>Y.jsxs(_E,{children:[Y.jsx(PE,{children:e.title}),Y.jsx(TE,{children:e.skills.map((t=>Y.jsxs(OE,{children:[Y.jsx(RE,{src:t.image}),t.name]},e.id)))})]},e.id)))})]})})}const zE=Tm.div`
+`;function AE(){return Y.jsx(kE,{id:"skills",children:Y.jsxs(SE,{children:[Y.jsx(EE,{children:"Skills"}),Y.jsx(CE,{children:"Aqui estão algumas das minhas habilidades nas quais tenho trabalhado nos últimos 3 anos."}),Y.jsx(jE,{children:wE.map((e=>Y.jsxs(_E,{children:[Y.jsx(PE,{children:e.title}),Y.jsx(TE,{children:e.skills.map((t=>Y.jsxs(OE,{children:[Y.jsx(RE,{src:t.image}),t.name]},e.id)))})]},e.id)))})]})})}const zE=Tm.div`
   background: linear-gradient(
       38.73deg,
       rgba(204, 0, 187, 0.15) 0%,

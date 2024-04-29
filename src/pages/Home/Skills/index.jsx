@@ -19,7 +19,7 @@ export function Skills() {
         <Title>Skills</Title>
         <Desc>
           Aqui estão algumas das minhas habilidades nas quais tenho trabalhado
-          nos últimos 2 anos.
+          nos últimos 3 anos.
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
