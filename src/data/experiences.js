@@ -42,7 +42,7 @@ export const experiences = [
   {
     id: 3,
     img: "https://i.postimg.cc/1tKmgcQx/decco.png",
-    role: "Auxiliar de Logística",
+    role: "Auxiliar Administrativo",
     company: "Shop Lingerie",
     date: "Out 2021 - Atual",
     desc: "Cadastro de Produtos em Marketplaces:\n" +
