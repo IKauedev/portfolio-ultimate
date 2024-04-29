@@ -750,6 +750,7 @@ margin-top: 20px;
   @media (max-width: 960px) {
     justify-content: center;
     padding: 0 0px;
+    display: none;
   }
 `,SS=Tm.div`
   position: relative;
