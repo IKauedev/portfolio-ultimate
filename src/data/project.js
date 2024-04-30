@@ -25,7 +25,7 @@ export const projects = [
   {
     id: 6,
     title: "Nova-Mail",
-    date: "Jun 2023 - Agu 2023",
+    date: "Jun 2023 - Atual",
     description:
       "Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por disparar emails, para isso utilizamos RabbitMQ juntamente com JMail para consumo e disparo do email.",
     image:
@@ -44,7 +44,7 @@ export const projects = [
   {
     id: 6,
     title: "Nova-Auth",
-    date: "Jun 2023 - Agu 2023",
+    date: "Jun 2023 - Atual",
     description:
       "Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por fazer a autenticação de usuarios e autorização",
     image:
