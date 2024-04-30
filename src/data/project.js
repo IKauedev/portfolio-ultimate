@@ -23,6 +23,44 @@ export const projects = [
     webapp: false,
   },
   {
+    id: 6,
+    title: "Nova-Mail",
+    date: "Jun 2023 - Agu 2023",
+    description:
+      "Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por disparar emails, para isso utilizamos RabbitMQ juntamente com JMail para consumo e disparo do email.",
+    image:
+      "https://i.postimg.cc/Bv8Wk2sw-/OIG4.jpg",
+    tags: [
+      "JMail",
+      "Java",
+      "Spring Boot",
+      "Design Patterns (DDD)",
+      "Service"
+    ],
+    category: "backend",
+    github: "https://github.com/iKaueMatos/Nova-mail",
+    webapp: false,
+  },
+  {
+    id: 6,
+    title: "Nova-Auth",
+    date: "Jun 2023 - Agu 2023",
+    description:
+      "Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por fazer a autenticação de usuarios e autorização",
+    image:
+      "https://i.postimg.cc/1XRcfcW9/OIG3-1.jpg",
+    tags: [
+      "Spring Security",
+      "Java",
+      "Spring Boot",
+      "Design Patterns (DDD)",
+      "Service"
+    ],
+    category: "backend",
+    github: "https://github.com/iKaueMatos/Nova-mail",
+    webapp: false,
+  },
+  {
     id: 2,
     title: "Plataforma de agricultura orgânica",
     date: "Jun 2023 - Jul 2023",
