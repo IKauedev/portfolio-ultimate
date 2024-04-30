@@ -27,7 +27,6 @@ export const certifications = [
         "Docker",
       ],
     },
-    
     {
       id: 3,
       title: "Microsserviços com Spring Cloud",
@@ -112,8 +111,7 @@ export const certifications = [
       date: "Aug 2023 - jan 2024",
       description:
         "Nesse curso tive a oportunidade de desenvolver minhas habilidades em nodejs, principalmente em teste unitarios e em teste de integração com jest, contudo também tive a oportunidade de ver como a design patters DDD e estrutura na aplicação e o seu respectivo objetivo.",
-      image:
-        "https://i.postimg.cc/2jtgRP91/Screenshot-from-2024-01-03-14-15-26.png",
+      image: "https://i.postimg.cc/t4G0nKN2/Screenshot-2024-04-30-190818.png",
       tags: [
         "Nodejs",
         "Typescript",
@@ -121,7 +119,7 @@ export const certifications = [
       ],
     },
     {
-      id: 9,
+      id: 10,
       title: "Microservices with Spring Boot, Spring Cloud, Docker, K8s",
       date: "jan - fev 2024",
       description:
@@ -133,6 +131,20 @@ export const certifications = [
         "Docker",
         "GitHub",
         "Mysql"
+      ],
+    },
+    {
+      id: 11,
+      title: "React Js",
+      date: "jan - fev 2024",
+      description: "Nesse curo tive a oportunidade de conhecer diversas tecnologias, incluindo bibliotecas que podem agilizar o desenvolvimento de aplicação que posteriormente irá para web",
+      image:
+        "https://i.postimg.cc/3JKJ0Drk/Screenshot-2024-04-30-190849.png",
+      tags: [
+        "TypeScript",
+        "ReactJs",
+        "NextJs",
+        "StoryBook"
       ],
     },
   ];

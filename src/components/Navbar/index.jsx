@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTheme } from "styled-components";
@@ -6,6 +6,7 @@ import { useTheme } from "styled-components";
 import {
   ButtonContainer,
   GitHubButton,
+  LinkedinButton,
   LogoImg,
   MobileIcon,
   MobileLink,
@@ -61,6 +62,11 @@ export function Navbar() {
             Perfil GitHub
           </GitHubButton>
         </ButtonContainer>
+        <ButtonContainer>
+          <LinkedinButton href={Bio.linkedin} target="_blank">
+              Perfil Linkedin
+          </LinkedinButton>
+        </ButtonContainer>
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink href="#about" onClick={() => setIsOpen(!isOpen)}>
@@ -90,6 +96,18 @@ export function Navbar() {
             >
               Perfil GitHub
             </GitHubButton>
+            <LinkedinButton
+              style={{
+                padding: "10px 16px",
+                background: `${theme.primary}`,
+                color: "white",
+                width: "max-content",
+              }}
+              href={Bio.linkedin}
+              target="_blank"
+            >
+              Perfil Linkedin
+            </LinkedinButton>
           </MobileMenu>
         )}
       </NavbarContainer>

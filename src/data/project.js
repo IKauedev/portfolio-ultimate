@@ -5,9 +5,9 @@ export const projects = [
     title: "Startup Nova Software",
     date: "Set 2023 - Atual",
     description:
-      "Aplicação Desenvolvida com intuito de ser uma plataforma de e-commerce onde fornece serviço para outras empresas que querem ter a sua presença na internet além de promove-la.",
+      "A aplicação Nova Software está sendo desenvolvida com intuito de ser uma plataforma de e-commerce onde fornece serviços sendo assim um SASS, nosso objetivo principal e atingir o publico de micro-empresas de varejo que ainda não contém a sua presença virtual.",
     image:
-      "https://vignette.wikia.nocookie.net/stevenuniverso-fanfiction/images/2/24/Em_breve.jpg/revision/latest?cb=20160721194232&path-prefix=pt-br",
+      "https://i.postimg.cc/pdkHKss4/novasoftware.jpg",
     tags: [
       "Docker",
       "AWS",
