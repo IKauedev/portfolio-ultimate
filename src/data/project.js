@@ -163,7 +163,7 @@ export const projects = [
       "Service"
     ],
     category: "backend",
-    github: "https://github.com/iKaueMatos/Nova-mail",
+    github: "https://github.com/iKaueMatos/Nova-auth",
     webapp: false,
   },
 ];

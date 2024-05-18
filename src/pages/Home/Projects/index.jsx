@@ -13,6 +13,7 @@ import {
 } from "./components/ProjectsStyle.js";
 
 export function Projects({ openModal, setOpenModal }) {
+  const [visibleCount, setVisibleCount] = useState(5);
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [showAllProjects, setShowAllProjects] = useState(false);
 
@@ -21,24 +22,29 @@ export function Projects({ openModal, setOpenModal }) {
       if (prevCategories.includes(category)) {
         return prevCategories.filter((prevCategory) => prevCategory !== category);
       }
-      
       return [...prevCategories, category];
     });
 
+    setVisibleCount(5);
     setShowAllProjects(false);
   };
 
-  const visibleProjects = showAllProjects
-    ? projects
-    : projects
-        .filter((project) => selectedCategories.length === 0 || selectedCategories.includes(project.category))
-        .slice(0, 5);
-
   const handleShowMoreClick = () => {
-    setShowAllProjects(true);
+    setVisibleCount((prevCount) => prevCount + 5);
+    if (visibleCount + 5 >= projects.length) {
+      setShowAllProjects(true);
+    }
+  };
+
+  const handleShowLessClick = () => {
+    setVisibleCount(5);
+    setShowAllProjects(false);
   };
 
   const isCategorySelected = (category) => selectedCategories.includes(category);
+  const visibleProjects = projects
+    .filter((project) => selectedCategories.length === 0 || selectedCategories.includes(project.category))
+    .slice(0, visibleCount);
 
   return (
     <Container id="projects">
@@ -81,8 +87,11 @@ export function Projects({ openModal, setOpenModal }) {
             />
           ))}
         </CardContainer>
-        {projects.length > 5 && !showAllProjects && (
+        {!showAllProjects && (
           <Button onClick={handleShowMoreClick}>Mostrar Mais</Button>
+        )}
+        {visibleCount > 5 && (
+          <Button onClick={handleShowLessClick}>Mostrar Menos</Button>
         )}
       </Wrapper>
     </Container>

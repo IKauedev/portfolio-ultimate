@@ -51,10 +51,6 @@ export const skills = [
           "https://3.bp.blogspot.com/-vKsSt3O6akI/WLZr9nJdxaI/AAAAAAAAAh0/1idGm941xEYYnXetk5yUmX3ncQaMu1oMwCLcB/s1600/java-logo-large.png",
       },
       {
-        name: "Kotlin",
-        image: "https://cdn.freebiesupply.com/logos/thumbs/2x/kotlin-1-logo.png",
-      },
-      {
         name: "Spring Boot",
         image:
           "https://dz2cdn1.dzone.com/storage/temp/12434118-spring-boot-logo.png",

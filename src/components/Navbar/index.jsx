@@ -84,6 +84,9 @@ export function Navbar() {
             <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>
               Formação Acadêmica
             </MobileLink>
+            <MobileLink href="https://novasoftwaresolutions.com.br/" onClick={() => setIsOpen(!isOpen)}>
+              Conheça a Nova Software
+            </MobileLink>
             <GitHubButton
               style={{
                 padding: "10px 16px",

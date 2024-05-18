@@ -27,6 +27,9 @@ export function Certification() {
         {certifications.length > 5 && !showAll && (
           <Button onClick={() => setShowAll(true)}>Mostrar Mais</Button>
         )}
+        {showAll == true && certifications.length > 5 && (
+          <Button onClick={() => setShowAll(false)}>Mostrar Menos</Button>
+        )}
       </Wrapper>
     </Container>
   );
