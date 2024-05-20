@@ -21,7 +21,7 @@ import {
 export function HeroSection() {
   function handleDownload()  {
     const link = document.createElement("a");
-    link.href = "public/Curriculo.pdf";
+    link.href = "Curriculo.pdf";
     link.download = "Curriculo.pdf";
     document.body.appendChild(link);
     link.click();
