@@ -19,6 +19,15 @@ import {
 } from "./components/index.js";
 
 export function HeroSection() {
+  function handleDownload()  {
+    const link = document.createElement("a");
+    link.href = "public/Curriculo.pdf";
+    link.download = "Curriculo.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <div id="about">
       <HeroContainer>
@@ -42,7 +51,7 @@ export function HeroSection() {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display">
+            <ResumeButton href={Bio.resume} target="display" onClick={handleDownload}>
               Curriculo! <MdDownload />
             </ResumeButton>
           </HeroLeftContainer>
