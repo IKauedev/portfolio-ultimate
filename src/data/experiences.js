@@ -2,14 +2,14 @@ export const experiences = [
   {
     id: 1,
     img: "https://i.postimg.cc/QM7khYD6/icon.jpg",
-    role: "Co-fundador & Desenvolvedor Back-end",
+    role: "CEO & Desenvolvedor Back-end",
     company: "Nova Software",
     date: "Set 2023 - Atual",
-    desc: "Como Co-fundador da Nova Software e também desenvolvedor, estou em uma posição única que permite entender tanto os aspectos estratégicos e de negócios quanto os aspectos técnicos do desenvolvimento de software. Está sendo um desafio muito gratificante, pois me dá a capacidade de desenvolver um produto onde irei fornecer para diversos usuários e cumprir com propósito real. Além disso, a Nova Software tem o objetivo de fornecer serviços para um usuário que deseja começar no ramo de vendas online, prevendo até mesmo situações do dia a dia.",
+    desc: "Como Ceo da Nova Software e também desenvolvedor, estou em uma posição única que permite entender tanto os aspectos estratégicos e de negócios quanto os aspectos técnicos do desenvolvimento de software. Está sendo um desafio muito gratificante, pois me dá a capacidade de desenvolver um produto onde irei fornecer para diversos usuários e cumprir com propósito real. Além disso, a Nova Software tem o objetivo de fornecer serviços para um usuário que deseja começar no ramo de vendas online, prevendo até mesmo situações do dia a dia.",
     skills: [
       "Docker",
       "AWS",
-      "React.js",
+      "Angular",
       "JavaScript",
       "Java",
       "SpringBoot"
