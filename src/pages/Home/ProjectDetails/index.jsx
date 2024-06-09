@@ -1,6 +1,6 @@
 import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
-import React from "react";
+
 import {
     Button,
     ButtonGroup,
@@ -41,8 +41,8 @@ export function ProjectDetails({ openModal, setOpenModal }) {
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>
-            {project?.tags.map((tag) => (
-              <Tag>{tag}</Tag>
+            {project?.tags.map((tag, index) => (
+              <Tag key={index}>{tag}</Tag>
             ))}
           </Tags>
           <Desc>{project?.description}</Desc>
@@ -50,8 +50,8 @@ export function ProjectDetails({ openModal, setOpenModal }) {
             <>
               <Label>Members</Label>
               <Members>
-                {project?.member.map((member) => (
-                  <Member>
+                {project?.member.map((member, index) => (
+                  <Member key={index}>
                     <MemberImage src={member.img} />
                     <MemberName>{member.name}</MemberName>
                     <a

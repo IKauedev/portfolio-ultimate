@@ -1,6 +1,6 @@
 import { MdDownload } from "react-icons/md";
 import Typewriter from "typewriter-effect";
-import profile from "../../../assets/images/profile.jpg";
+import profile from "../../../assets/images/ikauedev.jpg";
 import { Bio } from "../../../data/bio.js";
 import HeroBgAnimation from "../HeroBgAnimation/index.jsx";
 
