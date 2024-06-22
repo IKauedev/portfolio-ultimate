@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 
@@ -20,7 +21,7 @@ import {
 } from "./components";
 
 export function ProjectDetails({ openModal, setOpenModal }) {
-  const project = openModal?.project;
+  const project = openModal && openModal.project !== undefined ? openModal.project : null;
   return (
     <Modal
       open={true}

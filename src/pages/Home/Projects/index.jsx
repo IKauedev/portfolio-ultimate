@@ -20,7 +20,9 @@ export function Projects({ openModal, setOpenModal }) {
   const handleFilterChange = (category) => {
     setSelectedCategories((prevCategories) => {
       if (prevCategories.includes(category)) {
-        return prevCategories.filter((prevCategory) => prevCategory !== category);
+        return prevCategories.filter(
+          (prevCategory) => prevCategory !== category
+        );
       }
       return [...prevCategories, category];
     });
@@ -41,9 +43,14 @@ export function Projects({ openModal, setOpenModal }) {
     setShowAllProjects(false);
   };
 
-  const isCategorySelected = (category) => selectedCategories.includes(category);
+  const isCategorySelected = (category) =>
+    selectedCategories.includes(category);
   const visibleProjects = projects
-    .filter((project) => selectedCategories.length === 0 || selectedCategories.includes(project.category))
+    .filter(
+      (project) =>
+        selectedCategories.length === 0 ||
+        selectedCategories.includes(project.category)
+    )
     .slice(0, visibleCount);
 
   return (

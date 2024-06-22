@@ -35,7 +35,7 @@ text-overflow: ellipsis;
 export const Card = styled.div`
     width: 650px;
     border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 12px 16px;
     justify-content: space-between;
     position: relative;
@@ -43,7 +43,9 @@ export const Card = styled.div`
     display: flex;
     flex-direction: column;
     gap: 12px;
+    border: 0.1px solid #febe0b;
     transition: all 0.3s ease-in-out;
+
     &:hover{
         box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
         transform: translateY(-5px);
@@ -63,7 +65,6 @@ export const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
 `
 
 export const Top = styled.div`
