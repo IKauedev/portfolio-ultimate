@@ -2,10 +2,10 @@ export const experiences = [
   {
     id: 1,
     img: "https://i.postimg.cc/QM7khYD6/icon.jpg",
-    role: "CEO & Desenvolvedor Back-end",
+    role: "Desenvolvedor Back-end",
     company: "Nova Software",
-    date: "Set 2023 - Atual",
-    desc: "Como Ceo da Nova Software e também desenvolvedor, estou em uma posição única que permite entender tanto os aspectos estratégicos e de negócios quanto os aspectos técnicos do desenvolvimento de software. Está sendo um desafio muito gratificante, pois me dá a capacidade de desenvolver um produto onde irei fornecer para diversos usuários e cumprir com propósito real. Além disso, a Nova Software tem o objetivo de fornecer serviços para um usuário que deseja começar no ramo de vendas online, prevendo até mesmo situações do dia a dia.",
+    date: "Set 2023 - Set 2024",
+    desc: "Como freelancer na área de desenvolvimento de software, tenho a oportunidade de entender profundamente tanto os aspectos estratégicos e de negócios quanto os detalhes técnicos dos projetos em que trabalho. Esse desafio tem sido extremamente recompensador, pois me permite criar produtos que serão utilizados por diversos usuários, cumprindo um propósito real. Além disso, meu foco é ajudar clientes que desejam iniciar no ramo de vendas online, oferecendo soluções que antecipam e resolvem situações do dia a dia.",
     skills: [
       "Docker",
       "AWS",
