@@ -2,9 +2,9 @@ export const experiences = [
   {
     id: 1,
     img: "https://i.postimg.cc/QM7khYD6/icon.jpg",
-    role: "Desenvolvedor Back-end",
+    role: "Freelancer",
     company: "Nova Software",
-    date: "Set 2023 - Set 2024",
+    date: "Set 2023 - Atual",
     desc: "Como freelancer na área de desenvolvimento de software, tenho a oportunidade de entender profundamente tanto os aspectos estratégicos e de negócios quanto os detalhes técnicos dos projetos em que trabalho. Esse desafio tem sido extremamente recompensador, pois me permite criar produtos que serão utilizados por diversos usuários, cumprindo um propósito real. Além disso, meu foco é ajudar clientes que desejam iniciar no ramo de vendas online, oferecendo soluções que antecipam e resolvem situações do dia a dia.",
     skills: [
       "Docker",
