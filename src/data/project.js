@@ -2,10 +2,10 @@
 export const projects = [
   {
     id: 1,
-    title: "(X) Twitter Microserviços",
+    title: "(X) Twitter Microsserviços",
     date: "Set 2024 - out - 2024",
     description:
-      "O projeto (X) Twitter Microserviços foi desenvolvido com intuito de replicar o funcionamento do twitter utilizando conceitos de microserviços atuais, neste projeto foi utilizado diversas tecnologias onde me possibilitou apriomorar os meus conhecimentos em java.",
+      "O projeto (X) Twitter Microsserviços foi desenvolvido com intuito de replicar o funcionamento do twitter utilizando conceitos de microsserviços atuais, neste projeto foi utilizado diversas tecnologias onde me possibilitou apriomorar os meus conhecimentos em java.",
     image:
       "https://i.postimg.cc/3xVNXjVv/3dcfd26a-e7c4-4147-af66-58eeee380e75.jpg",
     tags: [
