@@ -75,12 +75,25 @@ export function ProjectDetails({ openModal, setOpenModal }) {
             </>
           )}
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
-              Visualizar Código
-            </Button>
-            <Button href={project?.webapp} target="new">
-              {project?.webapp ? "Visualizar Projeto" : "Link Indisponível"}
-            </Button>
+          {project?.fullstack ? (
+            <>
+              <Button dull href={project?.github} target="_blank">
+                Visualizar Back-end
+              </Button>
+              <Button href={project?.webapp} target="_blank">
+                {project?.webapp ? "Visualizar Front-end" : "Link Indisponível"}
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button dull href={project?.github} target="_blank">
+                Visualizar Código
+              </Button>
+              <Button href={project?.webapp} target="_blank">
+                {project?.webapp ? "Visualizar Projeto" : "Link Indisponível"}
+              </Button>
+            </>
+          )}
           </ButtonGroup>
         </Wrapper>
       </Container>

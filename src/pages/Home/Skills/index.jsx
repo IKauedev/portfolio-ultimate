@@ -3,7 +3,6 @@ import {
   Container,
   Desc,
   Skill,
-  SkillImage,
   SkillItem,
   SkillList,
   SkillTitle,
@@ -22,16 +21,20 @@ export function Skills() {
           nos últimos 3 anos.
         </Desc>
         <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill key={skill.id}>
-              <SkillTitle>{skill.title}</SkillTitle>
+          {skills.map((category) => (
+            <Skill key={category.title}>
+              <SkillTitle>{category.title}</SkillTitle>
               <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem key={skill.id}>
-                    <SkillImage src={item.image} />
-                    {item.name}
-                  </SkillItem>
-                ))}
+                {category.skills.map((item) => {
+                  const IconComponent = item.icon;
+
+                  return (
+                    <SkillItem key={item.name}>
+                      <IconComponent style={{ fontSize: "2rem", marginRight: "8px", color: "rgb(254, 190, 11)" }} />
+                      {item.name}
+                    </SkillItem>
+                  );
+                })}
               </SkillList>
             </Skill>
           ))}

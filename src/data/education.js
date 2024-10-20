@@ -20,7 +20,7 @@ export const education = [
     img: "https://yt3.ggpht.com/a/AGF-l7_gxaZktmHADjcM5nVmCyQeupZS2vf15n638A=s900-mo-c-c0xffffffff-rj-k-no",
     school: "Alura",
     date: "Apr 2022 - mar 2023",
-    desc: "Nos cursos disponibilizados pela alura, explorei o desenvolvimento Front-end e desenvolvimento Back-end utilizando Java, tendo oportunidade também de aprender react.js e spring boot, além de explorar mais o lado empresarial e me aperfeiçoar nas soft skills.",
+    desc: "Nós cursos disponibilizados pela alura, explorei o desenvolvimento Front-end e desenvolvimento Back-end utilizando Java, tendo oportunidade também de aprender react.js e spring boot, além de explorar mais o lado empresarial e me aperfeiçoar nas soft skills.",
     degree: "Desenvolvimento Front-end & Back-end",
   },
   {

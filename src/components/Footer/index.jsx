@@ -29,7 +29,7 @@ export function Footer() {
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Kauê Matos. Todos os direitos reservados.
+          &copy; 2024 Kauê Matos. Todos os direitos reservados.
         </Copyright>
       </FooterWrapper>
     </FooterContainer>

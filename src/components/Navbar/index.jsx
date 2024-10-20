@@ -56,6 +56,7 @@ export function Navbar() {
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#education">Formação Acadêmica</NavLink>
+          <NavLink href="https://novasoftwaresolutions.com.br/">Nova Software</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
