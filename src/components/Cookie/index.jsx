@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogActions, DialogContent, DialogTitle, Typography } from "@mui/material";
 import { Cookie } from "@mui/icons-material";
 import { styled } from '@mui/system';
-import { Button } from "./index.js";
+import { ButtonAccept, ButtonReject } from "./index.js";
+import CryptoJS from "crypto-js";
 
+const SECRET_KEY = 'bolt'; 
 export function CookieModal() {
   const [open, setOpen] = useState(false);
 
@@ -56,7 +58,8 @@ export function CookieModal() {
       language: navigator.language || navigator.userLanguage,
     };
 
-    localStorage.setItem('cookieConsent', JSON.stringify(userConsentInfo));
+    const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(userConsentInfo), SECRET_KEY).toString();
+    localStorage.setItem('cookieConsent', encryptedData);
     setOpen(false);
   };
 
@@ -66,8 +69,19 @@ export function CookieModal() {
       acceptedCookies: false,
     };
 
-    localStorage.setItem('cookieConsent', JSON.stringify(userConsentInfo));
+    const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(userConsentInfo), SECRET_KEY).toString();
+    localStorage.setItem('cookieConsent', encryptedData);
     setOpen(false);
+  };
+
+  const decryptCookieConsent = () => {
+    const cookieConsent = localStorage.getItem('cookieConsent');
+    if (cookieConsent) {
+      const bytes = CryptoJS.AES.decrypt(cookieConsent, SECRET_KEY);
+      const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
+      return JSON.parse(decryptedData);
+    }
+    return null;
   };
 
   return (
@@ -77,7 +91,7 @@ export function CookieModal() {
       fullWidth
       maxWidth="xl"
     >
-      <DialogTitle>
+      <DialogTitle color="white">
         <Cookie style={{ marginRight: '8px', verticalAlign: 'middle' }} />
         Este site usa cookies
       </DialogTitle>
@@ -92,12 +106,12 @@ export function CookieModal() {
         </Typography>
       </StyledDialogContent>
       <StyledDialogActions>
-        <Button onClick={handleAcceptCookies} color="primary" variant="contained">
+        <ButtonAccept onClick={handleAcceptCookies} color="primary" variant="contained">
           Aceitar Cookies
-        </Button>
-        <Button onClick={handleRejectCookies} color="secondary" variant="outlined">
+        </ButtonAccept>
+        <ButtonReject onClick={handleRejectCookies} color="secondary" variant="outlined">
           Recusar Cookies
-        </Button>
+        </ButtonReject>
       </StyledDialogActions>
     </StyledDialog>
   );
@@ -110,18 +124,31 @@ const StyledDialog = styled(Dialog)(({ theme }) => ({
     margin: 0,
     borderRadius: '10px 10px 0 0',
     width: '100%',
+    maxWidth: '600px',
     boxShadow: '0px -2px 10px rgba(0, 0, 0, 0.1)',
     backgroundColor: '#000',
-    maxHeight: '250px',
+    maxHeight: '300px',
+    overflow: 'hidden',
+    [theme.breakpoints.down('sm')]: {
+      maxHeight: '250px',
+    },
   },
 }));
 
 const StyledDialogContent = styled(DialogContent)(({ theme }) => ({
   padding: theme.spacing(2),
-  overflow: 'hidden',
+  overflowY: 'auto',
+  maxHeight: '200px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
 }));
 
 const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
   justifyContent: 'space-between',
   padding: theme.spacing(1, 2),
+  flexDirection: 'row',
+  [theme.breakpoints.down('sm')]: {
+    flexDirection: 'column',
+  },
 }));
