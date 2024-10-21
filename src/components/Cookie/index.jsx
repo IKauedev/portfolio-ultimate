@@ -41,10 +41,10 @@ export function CookieModal() {
     const userAgent = navigator.userAgent;
     let osName = "Unknown";
     if (userAgent.indexOf("Win") > -1) osName = "Windows";
-    else if (userAgent.indexOf("Mac") > -1) osName = "MacOS";
-    else if (userAgent.indexOf("Linux") > -1) osName = "Linux";
-    else if (userAgent.indexOf("Android") > -1) osName = "Android";
-    else if (userAgent.indexOf("like Mac") > -1) osName = "iOS";
+    if (userAgent.indexOf("Mac") > -1) osName = "MacOS";
+    if (userAgent.indexOf("Linux") > -1) osName = "Linux";
+    if (userAgent.indexOf("Android") > -1) osName = "Android";
+    if (userAgent.indexOf("like Mac") > -1) osName = "iOS";
 
     return osName;
   };

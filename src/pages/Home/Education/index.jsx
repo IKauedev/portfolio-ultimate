@@ -44,7 +44,7 @@ export function Education() {
                       color="primary"
                       style={{ color: theme.palette.primary.main }} 
                   />
-                  {index !== experiences.length && (
+                  {index !== education.length && (
                     <TimelineConnector style={{ background: "#febe0b" }} />
                   )}
                 </TimelineSeparator>
