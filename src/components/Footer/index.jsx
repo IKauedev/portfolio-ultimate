@@ -1,7 +1,7 @@
-import { LogoDev } from "@mui/icons-material";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import React from "react";
+import { LogoDev } from '@mui/icons-material';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import React from 'react';
 import {
   Copyright,
   FooterContainer,
@@ -9,8 +9,8 @@ import {
   Logo,
   SocialMediaIcon,
   SocialMediaIcons,
-} from ".";
-import { Bio } from "../../data/bio.js";
+} from '.';
+import { Bio } from '../../data/bio.js';
 
 export function Footer() {
   return (

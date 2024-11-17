@@ -1,4 +1,4 @@
-import { Card, Date, Description, Details, Image, Tag, Tags, Title } from ".";
+import { Card, Date, Description, Details, Image, Tag, Tags, Title } from '.';
 
 export function CertificationCard({ certification }) {
   return (

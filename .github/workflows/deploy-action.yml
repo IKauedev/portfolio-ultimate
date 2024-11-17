@@ -3,7 +3,7 @@ name: 🚀 Deploy website on push
 on:
   push:
     branches:
-      - portfolio-2023      
+      - portfolio-2023
 
 jobs:
   web-deploy:
@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
@@ -21,9 +21,14 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: 🔍 Run ESLint
+        run: npm run lint
+        env:
+          CI: true
+
       - name: Build React App
         run: npm run build
-      
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:

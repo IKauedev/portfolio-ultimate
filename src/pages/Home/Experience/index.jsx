@@ -1,12 +1,12 @@
-import Timeline from "@mui/lab/Timeline";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { experiences } from "../../../data/experiences.js";
-import { createTheme, ThemeProvider } from "@mui/material";
-import { ExperienceCard } from "../Cards/components/ExperienceCard/ExperienceCard.jsx";
+import Timeline from '@mui/lab/Timeline';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import { experiences } from '../../../data/experiences.js';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { ExperienceCard } from '../Cards/components/ExperienceCard/ExperienceCard.jsx';
 
 import {
   Container,
@@ -14,16 +14,16 @@ import {
   TimelineSection,
   Title,
   Wrapper,
-} from "./components/index.js";
+} from './components/index.js';
 
 export function Experience() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: "#FFF",
+        main: '#FFF',
       },
       secondary: {
-        main: "#febe0b",
+        main: '#febe0b',
       },
     },
   });
@@ -45,10 +45,10 @@ export function Experience() {
                       style={{ color: theme.palette.primary.main }}
                     />
                     {index !== experiences.length - 1 && (
-                      <TimelineConnector style={{ background: "#febe0b" }} />
+                      <TimelineConnector style={{ background: '#febe0b' }} />
                     )}
                   </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                  <TimelineContent sx={{ py: '12px', px: 2 }}>
                     <ExperienceCard experience={experience} />
                   </TimelineContent>
                 </TimelineItem>

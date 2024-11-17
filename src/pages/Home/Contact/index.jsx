@@ -1,7 +1,11 @@
-import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
-import React, { useRef } from "react";
-import { EMAIL_TEMPLATE_SERVICE, EMAIL_TOKEN, EMAIL_TOKEN_SERVICE } from "../../../constants/BASE_API_EMAIL";
+import emailjs from '@emailjs/browser';
+import { Snackbar } from '@mui/material';
+import React, { useRef } from 'react';
+import {
+  EMAIL_TEMPLATE_SERVICE,
+  EMAIL_TOKEN,
+  EMAIL_TOKEN_SERVICE,
+} from '../../../constants/BASE_API_EMAIL';
 import {
   ContactButton,
   ContactForm,
@@ -12,7 +16,7 @@ import {
   Desc,
   Title,
   Wrapper,
-} from "./components";
+} from './components';
 
 export function Contact() {
   const [open, setOpen] = React.useState(false);
@@ -36,7 +40,7 @@ export function Contact() {
           EMAIL_TOKEN_SERVICE,
           EMAIL_TEMPLATE_SERVICE,
           form.current,
-          EMAIL_TOKEN
+          EMAIL_TOKEN,
         )
         .then(
           (result) => {
@@ -45,7 +49,7 @@ export function Contact() {
           },
           (error) => {
             console.log(error.text);
-          }
+          },
         );
     }
   };
@@ -93,26 +97,30 @@ export function Contact() {
             name="from_email"
             error={errors.emailError}
           />
-          {errors.email && <div style={{ color: "red" }}>Email inválido</div>}
+          {errors.email && <div style={{ color: 'red' }}>Email inválido</div>}
           <ContactInput
             placeholder="Digite seu nome"
             name="from_name"
             error={errors.nameError}
           />
-          {errors.name && <div style={{ color: "red" }}>Nome inválido</div>}
+          {errors.name && <div style={{ color: 'red' }}>Nome inválido</div>}
           <ContactInput
             placeholder="Assunto"
             name="subject"
             error={errors.subject}
           />
-          {errors.subject && <div style={{ color: "red" }}>Assunto inválido</div>}
+          {errors.subject && (
+            <div style={{ color: 'red' }}>Assunto inválido</div>
+          )}
           <ContactInputMessage
             placeholder="Mensagem"
             rows="4"
             name="message"
             error={errors.message}
           />
-          {errors.message && <div style={{ color: "red" }}>Messagem inválida</div>}
+          {errors.message && (
+            <div style={{ color: 'red' }}>Messagem inválida</div>
+          )}
           <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
         <Snackbar
@@ -121,7 +129,7 @@ export function Contact() {
           onClose={() => setOpen(false)}
           message="Email enviado com sucesso!"
           severity="success"
-          style={{background:"white", color:"black"}}
+          style={{ background: 'white', color: 'black' }}
         />
       </Wrapper>
     </Container>

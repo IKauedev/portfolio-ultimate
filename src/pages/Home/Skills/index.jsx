@@ -1,4 +1,4 @@
-import { skills } from "../../../data/skills";
+import { skills } from '../../../data/skills';
 import {
   Container,
   Desc,
@@ -9,7 +9,7 @@ import {
   SkillsContainer,
   Title,
   Wrapper,
-} from "./components";
+} from './components';
 
 export function Skills() {
   return (
@@ -30,7 +30,13 @@ export function Skills() {
 
                   return (
                     <SkillItem key={item.name}>
-                      <IconComponent style={{ fontSize: "2rem", marginRight: "8px", color: "rgb(254, 190, 11)" }} />
+                      <IconComponent
+                        style={{
+                          fontSize: '2rem',
+                          marginRight: '8px',
+                          color: 'rgb(254, 190, 11)',
+                        }}
+                      />
                       {item.name}
                     </SkillItem>
                   );

@@ -1,5 +1,5 @@
-import { Link as LinkR } from "react-router-dom";
-import styled from "styled-components";
+import { Link as LinkR } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const Nav = styled.div`
   top: 0;
@@ -109,7 +109,7 @@ export const GitHubButton = styled.a`
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
-  
+
   :hover {
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
@@ -134,7 +134,7 @@ export const LinkedinButton = styled.a`
   text-decoration: none;
   font-size: 16px;
   transition: all 0.6s ease-in-out;
-  
+
   :hover {
     background: ${({ theme }) => theme.primary};
     color: ${({ theme }) => theme.white};
@@ -177,7 +177,7 @@ export const ButtonContainer = styled.div`
   justify-content: end;
   align-items: center;
   padding: 0 6px;
-  
+
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -214,11 +214,11 @@ export const MobileMenu = styled.div`
   background: ${({ theme }) => theme.black};
   transition: all 0.6s ease-in-out;
   transform: ${({ isOpen }) =>
-    isOpen ? "translateY(0)" : "translateY(-100%)"};
+    isOpen ? 'translateY(0)' : 'translateY(-100%)'};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  z-index: ${({ isOpen }) => (isOpen ? "1000" : "-1000")};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
 `;
 
 export const MobileMenuItems = styled.ul`

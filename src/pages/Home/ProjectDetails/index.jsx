@@ -1,27 +1,28 @@
 /* eslint-disable react/prop-types */
-import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
-import { Modal } from "@mui/material";
+import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
+import { Modal } from '@mui/material';
 
 import {
-    Button,
-    ButtonGroup,
-    Container,
-    Date,
-    Desc,
-    Image,
-    Label,
-    Member,
-    MemberImage,
-    MemberName,
-    Members,
-    Tag,
-    Tags,
-    Title,
-    Wrapper,
-} from "./components";
+  Button,
+  ButtonGroup,
+  Container,
+  Date,
+  Desc,
+  Image,
+  Label,
+  Member,
+  MemberImage,
+  MemberName,
+  Members,
+  Tag,
+  Tags,
+  Title,
+  Wrapper,
+} from './components';
 
 export function ProjectDetails({ openModal, setOpenModal }) {
-  const project = openModal && openModal.project !== undefined ? openModal.project : null;
+  const project =
+    openModal && openModal.project !== undefined ? openModal.project : null;
   return (
     <Modal
       open={true}
@@ -31,10 +32,10 @@ export function ProjectDetails({ openModal, setOpenModal }) {
         <Wrapper>
           <CloseRounded
             style={{
-              position: "absolute",
-              top: "10px",
-              right: "20px",
-              cursor: "pointer",
+              position: 'absolute',
+              top: '10px',
+              right: '20px',
+              cursor: 'pointer',
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
@@ -58,14 +59,14 @@ export function ProjectDetails({ openModal, setOpenModal }) {
                     <a
                       href={member.github}
                       target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                       <GitHub />
                     </a>
                     <a
                       href={member.linkedin}
                       target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
+                      style={{ textDecoration: 'none', color: 'inherit' }}
                     >
                       <LinkedIn />
                     </a>
@@ -75,25 +76,27 @@ export function ProjectDetails({ openModal, setOpenModal }) {
             </>
           )}
           <ButtonGroup>
-          {project?.fullstack ? (
-            <>
-              <Button dull href={project?.github} target="_blank">
-                Visualizar Back-end
-              </Button>
-              <Button href={project?.webapp} target="_blank">
-                {project?.webapp ? "Visualizar Front-end" : "Link Indisponível"}
-              </Button>
-            </>
-          ) : (
-            <>
-              <Button dull href={project?.github} target="_blank">
-                Visualizar Código
-              </Button>
-              <Button href={project?.webapp} target="_blank">
-                {project?.webapp ? "Visualizar Projeto" : "Link Indisponível"}
-              </Button>
-            </>
-          )}
+            {project?.fullstack ? (
+              <>
+                <Button dull href={project?.github} target="_blank">
+                  Visualizar Back-end
+                </Button>
+                <Button href={project?.webapp} target="_blank">
+                  {project?.webapp
+                    ? 'Visualizar Front-end'
+                    : 'Link Indisponível'}
+                </Button>
+              </>
+            ) : (
+              <>
+                <Button dull href={project?.github} target="_blank">
+                  Visualizar Código
+                </Button>
+                <Button href={project?.webapp} target="_blank">
+                  {project?.webapp ? 'Visualizar Projeto' : 'Link Indisponível'}
+                </Button>
+              </>
+            )}
           </ButtonGroup>
         </Wrapper>
       </Container>

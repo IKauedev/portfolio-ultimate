@@ -1,86 +1,105 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaBootstrap, FaNodeJs, FaJava, FaDocker, FaAws, FaBitbucket, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiSpringboot, SiMysql, SiNestjs, SiPostgresql, SiJunit5 } from "react-icons/si";
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaBootstrap,
+  FaNodeJs,
+  FaJava,
+  FaDocker,
+  FaAws,
+  FaBitbucket,
+  FaGithub,
+} from 'react-icons/fa';
+import {
+  SiTailwindcss,
+  SiSpringboot,
+  SiMysql,
+  SiNestjs,
+  SiPostgresql,
+  SiJunit5,
+} from 'react-icons/si';
 
 export const skills = [
   {
-    title: "Frontend",
+    title: 'Frontend',
     skills: [
       {
-        name: "React Js",
+        name: 'React Js',
         icon: FaReact,
       },
       {
-        name: "HTML",
+        name: 'HTML',
         icon: FaHtml5,
       },
       {
-        name: "CSS",
+        name: 'CSS',
         icon: FaCss3Alt,
       },
       {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: FaJsSquare,
       },
       {
-        name: "Bootstrap",
+        name: 'Bootstrap',
         icon: FaBootstrap,
       },
       {
-        name: "Tailwind CSS",
+        name: 'Tailwind CSS',
         icon: SiTailwindcss,
       },
     ],
   },
   {
-    title: "Backend",
+    title: 'Backend',
     skills: [
       {
-        name: "Node Js",
+        name: 'Node Js',
         icon: FaNodeJs,
       },
       {
-        name: "Nest JS",
+        name: 'Nest JS',
         icon: SiNestjs,
       },
       {
-        name: "Spring Boot",
+        name: 'Spring Boot',
         icon: SiSpringboot,
       },
       {
-        name: "Java",
+        name: 'Java',
         icon: FaJava,
       },
       {
-        name: "MySQL",
+        name: 'MySQL',
         icon: SiMysql,
       },
       {
-        name: "Postgresql",
+        name: 'Postgresql',
         icon: SiPostgresql,
       },
       {
-        name: "JUnit",
+        name: 'JUnit',
         icon: SiJunit5,
       },
     ],
   },
   {
-    title: "Infraestrutura",
+    title: 'Infraestrutura',
     skills: [
       {
-        name: "AWS",
+        name: 'AWS',
         icon: FaAws,
       },
       {
-        name: "Docker",
+        name: 'Docker',
         icon: FaDocker,
       },
       {
-        name: "Bitbucket",
+        name: 'Bitbucket',
         icon: FaBitbucket,
       },
       {
-        name: "Github",
+        name: 'Github',
         icon: FaGithub,
       },
     ],

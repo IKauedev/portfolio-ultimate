@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { projects } from "../../../data/project.js";
-import { ProjectCards } from "../Cards/components/ProjectCards/ProjectCards.jsx";
+import { useState } from 'react';
+import { projects } from '../../../data/project.js';
+import { ProjectCards } from '../Cards/components/ProjectCards/ProjectCards.jsx';
 import {
   Button,
   CardContainer,
@@ -10,7 +10,7 @@ import {
   ToggleButton,
   ToggleButtonGroup,
   Wrapper,
-} from "./components/ProjectsStyle.js";
+} from './components/ProjectsStyle.js';
 
 export function Projects({ openModal, setOpenModal }) {
   const [visibleCount, setVisibleCount] = useState(5);
@@ -21,7 +21,7 @@ export function Projects({ openModal, setOpenModal }) {
     setSelectedCategories((prevCategories) => {
       if (prevCategories.includes(category)) {
         return prevCategories.filter(
-          (prevCategory) => prevCategory !== category
+          (prevCategory) => prevCategory !== category,
         );
       }
       return [...prevCategories, category];
@@ -49,7 +49,7 @@ export function Projects({ openModal, setOpenModal }) {
     .filter(
       (project) =>
         selectedCategories.length === 0 ||
-        selectedCategories.includes(project.category)
+        selectedCategories.includes(project.category),
     )
     .slice(0, visibleCount);
 
@@ -64,22 +64,22 @@ export function Projects({ openModal, setOpenModal }) {
         <ToggleButtonGroup>
           <ToggleButton
             value="all"
-            onClick={() => handleFilterChange("all")}
+            onClick={() => handleFilterChange('all')}
             active={selectedCategories.length === 0}
           >
             Todos
           </ToggleButton>
           <ToggleButton
             value="backend"
-            onClick={() => handleFilterChange("backend")}
-            active={isCategorySelected("backend")}
+            onClick={() => handleFilterChange('backend')}
+            active={isCategorySelected('backend')}
           >
             Back-end
           </ToggleButton>
           <ToggleButton
             value="frontend"
-            onClick={() => handleFilterChange("frontend")}
-            active={isCategorySelected("frontend")}
+            onClick={() => handleFilterChange('frontend')}
+            active={isCategorySelected('frontend')}
           >
             Front-end
           </ToggleButton>

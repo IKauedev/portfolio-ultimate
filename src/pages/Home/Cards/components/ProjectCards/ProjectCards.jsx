@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 import {
-    Avatar,
-    Button,
-    Card,
-    Date,
-    Description,
-    Details,
-    Image,
-    Members,
-    Tag,
-    Tags,
-    Title,
-} from "./components";
+  Avatar,
+  Button,
+  Card,
+  Date,
+  Description,
+  Details,
+  Image,
+  Members,
+  Tag,
+  Tags,
+  Title,
+} from './components';
 
 export function ProjectCards({ project, setOpenModal }) {
   return (
@@ -19,7 +19,7 @@ export function ProjectCards({ project, setOpenModal }) {
       <Image src={project.image} />
       <Tags>
         {project.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
+          <Tag key={index}>{tag}</Tag>
         ))}
       </Tags>
       <Details>

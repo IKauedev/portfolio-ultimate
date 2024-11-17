@@ -1,11 +1,17 @@
-import { useState, useEffect } from "react";
-import { Dialog, DialogActions, DialogContent, DialogTitle, Typography } from "@mui/material";
-import { Cookie } from "@mui/icons-material";
+import { useState, useEffect } from 'react';
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Typography,
+} from '@mui/material';
+import { Cookie } from '@mui/icons-material';
 import { styled } from '@mui/system';
-import { ButtonAccept, ButtonReject } from "./index.js";
-import CryptoJS from "crypto-js";
+import { ButtonAccept, ButtonReject } from './index.js';
+import CryptoJS from 'crypto-js';
 
-const SECRET_KEY = 'bolt'; 
+const SECRET_KEY = 'bolt';
 export function CookieModal() {
   const [open, setOpen] = useState(false);
 
@@ -20,18 +26,18 @@ export function CookieModal() {
     const userAgent = navigator.userAgent;
     let browserName, browserVersion;
 
-    if (userAgent.indexOf("Chrome") > -1) {
-      browserName = "Chrome";
+    if (userAgent.indexOf('Chrome') > -1) {
+      browserName = 'Chrome';
       browserVersion = userAgent.match(/Chrome\/(\d+\.\d+\.\d+\.\d+)/)[1];
-    } else if (userAgent.indexOf("Firefox") > -1) {
-      browserName = "Firefox";
+    } else if (userAgent.indexOf('Firefox') > -1) {
+      browserName = 'Firefox';
       browserVersion = userAgent.match(/Firefox\/(\d+\.\d+)/)[1];
-    } else if (userAgent.indexOf("Safari") > -1) {
-      browserName = "Safari";
+    } else if (userAgent.indexOf('Safari') > -1) {
+      browserName = 'Safari';
       browserVersion = userAgent.match(/Version\/(\d+\.\d+\.\d+)/)[1];
     } else {
-      browserName = "Unknown";
-      browserVersion = "Unknown";
+      browserName = 'Unknown';
+      browserVersion = 'Unknown';
     }
 
     return { browserName, browserVersion };
@@ -39,12 +45,12 @@ export function CookieModal() {
 
   const getOSInfo = () => {
     const userAgent = navigator.userAgent;
-    let osName = "Unknown";
-    if (userAgent.indexOf("Win") > -1) osName = "Windows";
-    if (userAgent.indexOf("Mac") > -1) osName = "MacOS";
-    if (userAgent.indexOf("Linux") > -1) osName = "Linux";
-    if (userAgent.indexOf("Android") > -1) osName = "Android";
-    if (userAgent.indexOf("like Mac") > -1) osName = "iOS";
+    let osName = 'Unknown';
+    if (userAgent.indexOf('Win') > -1) osName = 'Windows';
+    if (userAgent.indexOf('Mac') > -1) osName = 'MacOS';
+    if (userAgent.indexOf('Linux') > -1) osName = 'Linux';
+    if (userAgent.indexOf('Android') > -1) osName = 'Android';
+    if (userAgent.indexOf('like Mac') > -1) osName = 'iOS';
 
     return osName;
   };
@@ -58,7 +64,10 @@ export function CookieModal() {
       language: navigator.language || navigator.userLanguage,
     };
 
-    const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(userConsentInfo), SECRET_KEY).toString();
+    const encryptedData = CryptoJS.AES.encrypt(
+      JSON.stringify(userConsentInfo),
+      SECRET_KEY,
+    ).toString();
     localStorage.setItem('cookieConsent', encryptedData);
     setOpen(false);
   };
@@ -69,7 +78,10 @@ export function CookieModal() {
       acceptedCookies: false,
     };
 
-    const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(userConsentInfo), SECRET_KEY).toString();
+    const encryptedData = CryptoJS.AES.encrypt(
+      JSON.stringify(userConsentInfo),
+      SECRET_KEY,
+    ).toString();
     localStorage.setItem('cookieConsent', encryptedData);
     setOpen(false);
   };
@@ -97,19 +109,28 @@ export function CookieModal() {
       </DialogTitle>
       <StyledDialogContent>
         <Typography color="white">
-          Utilizamos cookies para personalizar conteúdo, fornecer recursos de mídia social e analisar nosso tráfego.
-          Esses cookies nos ajudam a entender como você interage com o nosso site, permitindo que melhoremos sua
-          experiência de navegação.
+          Utilizamos cookies para personalizar conteúdo, fornecer recursos de
+          mídia social e analisar nosso tráfego. Esses cookies nos ajudam a
+          entender como você interage com o nosso site, permitindo que
+          melhoremos sua experiência de navegação.
         </Typography>
         <Typography variant="body2" color="white" sx={{ marginTop: 1 }}>
           Você pode optar por aceitar ou recusar o uso de cookies neste site.
         </Typography>
       </StyledDialogContent>
       <StyledDialogActions>
-        <ButtonAccept onClick={handleAcceptCookies} color="primary" variant="contained">
+        <ButtonAccept
+          onClick={handleAcceptCookies}
+          color="primary"
+          variant="contained"
+        >
           Aceitar Cookies
         </ButtonAccept>
-        <ButtonReject onClick={handleRejectCookies} color="secondary" variant="outlined">
+        <ButtonReject
+          onClick={handleRejectCookies}
+          color="secondary"
+          variant="outlined"
+        >
           Recusar Cookies
         </ButtonReject>
       </StyledDialogActions>

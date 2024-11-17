@@ -1,7 +1,14 @@
-import { useState } from "react";
-import { certifications } from "../../../data/certifications.js";
-import { CertificationCard } from "./components/certificationCard/index.jsx";
-import { Button, CardContainer, Container, Desc, Title, Wrapper } from "./components/index.js";
+import { useState } from 'react';
+import { certifications } from '../../../data/certifications.js';
+import { CertificationCard } from './components/certificationCard/index.jsx';
+import {
+  Button,
+  CardContainer,
+  Container,
+  Desc,
+  Title,
+  Wrapper,
+} from './components/index.js';
 
 export function Certification() {
   const [showAll, setShowAll] = useState(false);

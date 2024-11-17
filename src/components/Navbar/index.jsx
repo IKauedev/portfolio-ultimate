@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { useTheme } from "styled-components";
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { useTheme } from 'styled-components';
 
 import {
   ButtonContainer,
@@ -17,10 +17,10 @@ import {
   NavLogo,
   NavbarContainer,
   Span,
-} from ".";
+} from '.';
 
-import Logo from "../../assets/images/favicon.png";
-import { Bio } from "../../data/bio.js";
+import Logo from '../../assets/images/favicon.png';
+import { Bio } from '../../data/bio.js';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,17 +33,14 @@ export function Navbar() {
           <Link
             to="/"
             style={{
-              display: "flex",
-              alignItems: "center",
-              color: "white",
-              cursor: "pointer",
-              textDecoration: "none",
+              display: 'flex',
+              alignItems: 'center',
+              color: 'white',
+              cursor: 'pointer',
+              textDecoration: 'none',
             }}
           >
-            <LogoImg
-              src={Logo}
-              alt="Logo"
-            />
+            <LogoImg src={Logo} alt="Logo" />
             <Span>IKauê</Span>
           </Link>
         </NavLogo>
@@ -56,7 +53,9 @@ export function Navbar() {
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#education">Formação Acadêmica</NavLink>
-          <NavLink href="https://novasoftwaresolutions.com.br/">Nova Software</NavLink>
+          <NavLink href="https://novasoftwaresolutions.com.br/">
+            Nova Software
+          </NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
@@ -65,7 +64,7 @@ export function Navbar() {
         </ButtonContainer>
         <ButtonContainer>
           <LinkedinButton href={Bio.linkedin} target="_blank">
-              Perfil Linkedin
+            Perfil Linkedin
           </LinkedinButton>
         </ButtonContainer>
         {isOpen && (
@@ -85,15 +84,18 @@ export function Navbar() {
             <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>
               Formação Acadêmica
             </MobileLink>
-            <MobileLink href="https://novasoftwaresolutions.com.br/" onClick={() => setIsOpen(!isOpen)}>
+            <MobileLink
+              href="https://novasoftwaresolutions.com.br/"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               Conheça a Nova Software
             </MobileLink>
             <GitHubButton
               style={{
-                padding: "10px 16px",
+                padding: '10px 16px',
                 background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
+                color: 'white',
+                width: 'max-content',
               }}
               href={Bio.github}
               target="_blank"
@@ -102,10 +104,10 @@ export function Navbar() {
             </GitHubButton>
             <LinkedinButton
               style={{
-                padding: "10px 16px",
+                padding: '10px 16px',
                 background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
+                color: 'white',
+                width: 'max-content',
               }}
               href={Bio.linkedin}
               target="_blank"

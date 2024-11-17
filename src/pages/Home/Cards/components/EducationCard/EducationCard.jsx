@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Body,
   Card,
@@ -9,7 +9,7 @@ import {
   Name,
   Span,
   Top,
-} from ".";
+} from '.';
 
 export function EducationCard({ education }) {
   return (

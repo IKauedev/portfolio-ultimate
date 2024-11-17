@@ -1,8 +1,8 @@
-import { MdDownload } from "react-icons/md";
-import Typewriter from "typewriter-effect";
-import profile from "../../../assets/images/ikauedev4.0.jpg";
-import { Bio } from "../../../data/bio.js";
-import HeroBgAnimation from "../HeroBgAnimation/index.jsx";
+import { MdDownload } from 'react-icons/md';
+import Typewriter from 'typewriter-effect';
+import profile from '../../../assets/images/ikauedev2.0.jpg';
+import { Bio } from '../../../data/bio.js';
+import HeroBgAnimation from '../HeroBgAnimation/index.jsx';
 
 import {
   HeroBg,
@@ -16,13 +16,13 @@ import {
   SubTitle,
   TextLoop,
   Title,
-} from "./components/index.js";
+} from './components/index.js';
 
 export function HeroSection() {
-  function handleDownload()  {
-    const link = document.createElement("a");
-    link.href = "Curriculo.pdf";
-    link.download = "Curriculo.pdf";
+  function handleDownload() {
+    const link = document.createElement('a');
+    link.href = 'Curriculo.pdf';
+    link.download = 'Curriculo.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -36,9 +36,7 @@ export function HeroSection() {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>
-              Seja Bem vindo, Prazer me chamo {Bio.name}
-            </Title>
+            <Title>Seja Bem vindo, Prazer me chamo {Bio.name}</Title>
             <TextLoop>
               <Span>
                 <Typewriter
@@ -51,7 +49,11 @@ export function HeroSection() {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="display" onClick={handleDownload}>
+            <ResumeButton
+              href={Bio.resume}
+              target="display"
+              onClick={handleDownload}
+            >
               Curriculo! <MdDownload />
             </ResumeButton>
           </HeroLeftContainer>
