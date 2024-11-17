@@ -11,8 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -30,6 +29,11 @@
       "stylelint --fix",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "prettier": {
     "semi": true,
