@@ -10,6 +10,7 @@ import {
   FaAws,
   FaBitbucket,
   FaGithub,
+  FaAngular,
 } from 'react-icons/fa';
 import {
   SiTailwindcss,
@@ -25,11 +26,11 @@ export const skills = [
     title: 'Frontend',
     skills: [
       {
-        name: 'React Js',
+        name: 'ReactJS',
         icon: FaReact,
       },
       {
-        name: 'HTML',
+        name: 'HTML5',
         icon: FaHtml5,
       },
       {
@@ -45,8 +46,12 @@ export const skills = [
         icon: FaBootstrap,
       },
       {
-        name: 'Tailwind CSS',
+        name: 'TailwindCSS',
         icon: SiTailwindcss,
+      },
+      {
+        name: 'Angular',
+        icon: FaAngular,
       },
     ],
   },
@@ -54,11 +59,11 @@ export const skills = [
     title: 'Backend',
     skills: [
       {
-        name: 'Node Js',
+        name: 'NodeJS',
         icon: FaNodeJs,
       },
       {
-        name: 'Nest JS',
+        name: 'NestJS',
         icon: SiNestjs,
       },
       {
@@ -74,7 +79,7 @@ export const skills = [
         icon: SiMysql,
       },
       {
-        name: 'Postgresql',
+        name: 'PostgreSql',
         icon: SiPostgresql,
       },
       {
