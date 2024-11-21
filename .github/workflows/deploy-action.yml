@@ -32,6 +32,7 @@ jobs:
         id: build
 
       - name: 📂 Sync files
+        if: success()
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.ikauedev.com.br
@@ -39,3 +40,21 @@ jobs:
           password: ${{ secrets.PASS }}
           local-dir: ./build/
           server-dir: public_html/
+      
+      - name: Notify Discord on success
+        if: success()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d '{"content": "Aplicação: Ikauedev - Portfolio\nDeploy: realizado com sucesso!\nStatus: EM OPERAÇÃO\nURL: [www.ikauedev.com.br](https://www.ikauedev.com.br)"}' \
+          $DISCORD_WEBHOOK_URL
+
+      - name: Notify Discord on failure
+        if: failure()
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          curl -X POST -H "Content-Type: application/json" \
+          -d "{\"content\": \"**Deploy Falhou**\n\n**Job:** $GITHUB_JOB\n**Step:** ${{ steps.build.name }}\n**Error:** Ocorreu um erro ao processar o build, tente novamente!\n**URL:** [www.ikauedev.com.br](https://www.ikauedev.com.br)\"}" \
+          $DISCORD_WEBHOOK_URL
