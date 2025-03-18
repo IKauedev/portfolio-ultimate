@@ -29,7 +29,7 @@ export const projects = [
   {
     id: 3,
     title: 'Nova-Mail',
-    date: 'Jun 2023 - Atual',
+    date: 'Jun 2023 - Jul 2023',
     description:
       'Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por disparar emails, para isso utilizamos RabbitMQ juntamente com JMail para consumo e disparo do email.',
     image: 'https://i.postimg.cc/Bv8Wk2sw-/OIG4.jpg',
@@ -41,7 +41,7 @@ export const projects = [
   {
     id: 4,
     title: 'Nova-Auth',
-    date: 'Jun 2023 - Atual',
+    date: 'Jun 2023 - Jul 2023',
     description:
       'Esse repositorio tem intuito de ser uma parte da aplicação nova software onde e responsável por fazer a autenticação de usuarios e autorização',
     image: 'https://i.postimg.cc/1XRcfcW9/OIG3-1.jpg',
@@ -92,31 +92,5 @@ export const projects = [
     category: 'frontend',
     github: 'https://github.com/iKaueMatos/dogs.react',
     webapp: 'https://dogs-react-kappa.vercel.app/',
-  },
-  {
-    id: 8,
-    title: 'Desafio PicPay',
-    date: 'Dec 2021 - Apr 2022',
-    description:
-      'Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa PicPay basicamente o objetivo principal do projeto era desenvolver um API REST onde simulava alguns serviços de transação,deposito e etc contudo ele também mostraria feedback para usuario conforme a confirmação! de sucesso.',
-    image:
-      'https://logodownload.org/wp-content/uploads/2018/05/picpay-logo-3.png',
-    tags: ['Spring Boot', 'Java'],
-    category: 'backend',
-    github: 'https://github.com/iKaueMatos/picpay-challenge',
-    webapp: false,
-  },
-  {
-    id: 59,
-    title: 'Desafio Uber',
-    date: 'Jun 2023 - Jul 2023',
-    description:
-      'Esse projeto foi desenvolvido com intuito de simular um processo seletivo real, sendo portanto um desafio técnico que foi utilizado para selecionar futuros candidatos para fazer parte da empresa UBER basicamente o objetivo principal era utilizar um serviço da AWS (SES) para enviar emails para usuarios cadastrados simulando um microserviço.',
-    image:
-      'https://www.webdesignerdepot.com/cdn-origin/uploads/2018/09/uber_logo.png',
-    tags: ['Spring Boot', 'Java', 'AWS', 'SES'],
-    category: 'backend',
-    github: 'https://github.com/iKaueMatos/uber-challenge',
-    webapp: false,
   },
 ];

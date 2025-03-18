@@ -1,7 +1,6 @@
 import { LogoDev } from '@mui/icons-material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import React from 'react';
 import {
   Copyright,
   FooterContainer,
@@ -29,7 +28,7 @@ export function Footer() {
           </SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Kauê Matos. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Kauê Matos. Todos os direitos reservados.
         </Copyright>
       </FooterWrapper>
     </FooterContainer>

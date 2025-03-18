@@ -53,9 +53,6 @@ export function Navbar() {
           <NavLink href="#experience">Experiência</NavLink>
           <NavLink href="#projects">Projetos</NavLink>
           <NavLink href="#education">Formação Acadêmica</NavLink>
-          <NavLink href="https://novasoftwaresolutions.com.br/">
-            Nova Software
-          </NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
@@ -83,12 +80,6 @@ export function Navbar() {
             </MobileLink>
             <MobileLink href="#education" onClick={() => setIsOpen(!isOpen)}>
               Formação Acadêmica
-            </MobileLink>
-            <MobileLink
-              href="https://novasoftwaresolutions.com.br/"
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              Conheça a Nova Software
             </MobileLink>
             <GitHubButton
               style={{
