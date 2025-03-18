@@ -4,7 +4,7 @@ export const experiences = [
     img: 'https://i.postimg.cc/QM7khYD6/icon.jpg',
     role: 'Desenvolvedor Software Full-stack (SASS)',
     company: 'Nova Software',
-    date: 'Set 2023 - Atual',
+    date: 'Set 2023 - mar 2025',
     desc: 'Como desenvolvedor, tenho me dedicado a criar soluções tecnológicas robustas e eficientes, alinhadas às necessidades dos usuários e demandas de mercado. Trabalhar no desenvolvimento de produtos que impactam diretamente O a dia de diversos usuários tem sido uma experiência desafiadora e gratificante. Minha atuação foca em fornecer ferramentas que simplificam processos e ajudam empreendedores a ingressar e prosperar no mercado de vendas online, prevendo e solucionando desafios comuns.\n' +
     "Desenvolvimento Back-End com Java e Spring Boot\n" +
     "- Criação de arquiteturas baseadas em microserviços, garantindo escalabilidade e manutenção simplificada.\n" +
