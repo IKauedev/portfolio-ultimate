@@ -1,4 +1,4 @@
-# Portfólio - Versão 2023
+# Portfólio
 
 Bem-vindo ao meu portfólio online! Este repositório contém informações sobre mim, meus projetos e habilidades. Sinta-se à vontade para explorar e aprender mais sobre meu trabalho.
 
