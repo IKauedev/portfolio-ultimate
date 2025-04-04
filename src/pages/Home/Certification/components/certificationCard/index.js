@@ -13,6 +13,7 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all 0.8s ease-in-out;
 `;
+
 export const Card = styled.div`
   width: 330px;
   height: 530px;

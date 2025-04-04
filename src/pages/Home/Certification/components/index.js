@@ -110,7 +110,7 @@ export const Button = styled.button`
   width: 20%;
   text-decoration: none;
   text-align: center;
-  background: #febe0b;
+  background: #009FE3;
   padding: 13px 16px;
   margin-top: 5px;
   border-radius: 12px;

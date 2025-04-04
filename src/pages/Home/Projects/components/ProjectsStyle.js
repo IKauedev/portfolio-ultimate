@@ -31,7 +31,7 @@ export const Title = styled.div`
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
-  color: ${({ theme }) => theme.black};
+  color: ${({ theme }) => theme.primary};
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;

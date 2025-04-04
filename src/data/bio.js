@@ -1,8 +1,8 @@
 export const Bio = {
   name: 'Kauê de Matos',
-  roles: ['Desenvolvedor Back-end', 'Programador'],
+  roles: ['Desenvolvedor Full Stack', 'Engenheiro de Software', 'Entusiasta de Tecnologia', 'Criador de Soluções'],
   description:
-    'Sou uma pessoa motivada e versátil, sempre disposta a enfrentar novos desafios. Com paixão por aprender, me dedico a entregar resultados de alta qualidade. Com uma atitude positiva e uma mentalidade construtiva, estou pronto para dar uma contribuição significativa e alcançar grandes feitos.',
+    'Sou engenheiro de software Full Stack, focado em desenvolver soluções funcionais e escaláveis. Busco sempre aprender novas tecnologias e aprimorar minhas habilidades para entregar produtos de qualidade.',
   github: 'https://github.com/iKaueMatos',
   resume:
     'https://drive.google.com/file/d/1VFnrlUr4m7j5dN1FpaV1932k12LSxP4N/view?usp=sharing',

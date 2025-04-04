@@ -18,7 +18,7 @@ export function Skills() {
         <Title>Skills</Title>
         <Desc>
           Aqui estão algumas das minhas habilidades nas quais tenho trabalhado
-          nos últimos 3 anos.
+          nos últimos 5 anos.
         </Desc>
         <SkillsContainer>
           {skills.map((category) => (
@@ -34,7 +34,7 @@ export function Skills() {
                         style={{
                           fontSize: '2rem',
                           marginRight: '8px',
-                          color: 'rgb(254, 190, 11)',
+                          color: 'rgb(0, 159, 227)',
                         }}
                       />
                       {item.name}

@@ -27,7 +27,7 @@ export function Projects({ openModal, setOpenModal }) {
       return [...prevCategories, category];
     });
 
-    setVisibleCount(5);
+    setVisibleCount(3);
     setShowAllProjects(false);
   };
 
@@ -71,15 +71,15 @@ export function Projects({ openModal, setOpenModal }) {
           </ToggleButton>
           <ToggleButton
             value="backend"
-            onClick={() => handleFilterChange('backend')}
-            active={isCategorySelected('backend')}
+            onClick={() => handleFilterChange('Back-end')}
+            active={isCategorySelected('Back-end')}
           >
             Back-end
           </ToggleButton>
           <ToggleButton
             value="frontend"
-            onClick={() => handleFilterChange('frontend')}
-            active={isCategorySelected('frontend')}
+            onClick={() => handleFilterChange('Front-end')}
+            active={isCategorySelected('Front-end')}
           >
             Front-end
           </ToggleButton>

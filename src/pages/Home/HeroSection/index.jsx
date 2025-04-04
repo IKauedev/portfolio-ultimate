@@ -1,6 +1,6 @@
 import { MdDownload } from 'react-icons/md';
 import Typewriter from 'typewriter-effect';
-import profile from '../../../assets/images/ikauedev2.0.jpg';
+import profile from '../../../assets/images/ikauedev6.0.jpg';
 import { Bio } from '../../../data/bio.js';
 import HeroBgAnimation from '../HeroBgAnimation/index.jsx';
 
@@ -16,6 +16,7 @@ import {
   SubTitle,
   TextLoop,
   Title,
+  Text
 } from './components/index.js';
 
 export function HeroSection() {
@@ -36,7 +37,7 @@ export function HeroSection() {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
-            <Title>Seja Bem vindo, Prazer me chamo {Bio.name}</Title>
+            <Title>Seja Bem vindo, Prazer me chamo <Text>{Bio.name}</Text></Title>
             <TextLoop>
               <Span>
                 <Typewriter

@@ -6,9 +6,9 @@ export default {
   },
   // Colors for layout
   colors: {
-    primary1: '#febe0b',
+    primary1: '#009FE3',
     background1: '#222A35',
-    button: '#febe0b',
+    button: '#009FE3',
     background2: '#19212C',
     text: '#C8CFD8',
     text1: '#F2F5F7',

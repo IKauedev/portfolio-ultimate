@@ -23,7 +23,7 @@ export function Experience() {
         main: '#FFF',
       },
       secondary: {
-        main: '#febe0b',
+        main: '#009FE3',
       },
     },
   });
@@ -45,7 +45,7 @@ export function Experience() {
                       style={{ color: theme.palette.primary.main }}
                     />
                     {index !== experiences.length - 1 && (
-                      <TimelineConnector style={{ background: '#febe0b' }} />
+                      <TimelineConnector style={{ background: '#009FE3' }} />
                     )}
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: '12px', px: 2 }}>

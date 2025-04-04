@@ -32,6 +32,7 @@ export const Title = styled.div`
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
+  color: ${({ theme }) => theme.primary};
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -100,7 +101,7 @@ export const ContactButton = styled.button`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: #febe0b;
+  background: #009FE3;
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;

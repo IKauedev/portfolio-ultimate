@@ -15,7 +15,7 @@ export function Footer() {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>IKaue.dev</Logo>
+        <Logo>IKauêdev</Logo>
         <SocialMediaIcons>
           <SocialMediaIcon href={Bio.linkedin} target="display">
             <LinkedInIcon />

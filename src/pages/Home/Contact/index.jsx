@@ -43,7 +43,7 @@ export function Contact() {
           EMAIL_TOKEN,
         )
         .then(
-          (result) => {
+          () => {
             setOpen(true);
             form.current.reset();
           },

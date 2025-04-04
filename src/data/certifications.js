@@ -1,39 +1,39 @@
 export const certifications = [
   {
     id: 1,
-    title: 'Java',
+    title: 'Java: Fundamentos e Avançado',
     date: 'Fev 2023 - Ago 2023',
     description:
-      'Explorei as complexidades do Java, uma linguagem de programação versátil adequada para diversas necessidades de desenvolvimento de aplicativos. Cobriu tópicos como JPA, Spring Boot, Lambdas e Stream API.',
+      'Aprofundei meus conhecimentos em Java, explorando JPA, Spring Boot, Lambdas e Stream API para desenvolvimento escalável e eficiente.',
     image: 'https://i.postimg.cc/mrPb0Mgp/Screenshot-2023-11-30-075554.png',
     tags: ['Java', 'JPA', 'Spring Boot', 'Lambdas', 'Stream API'],
   },
   {
     id: 2,
-    title: 'Java e Spring Boot',
+    title: 'Desenvolvimento com Java e Spring Boot',
     date: 'Fev 2023 - Ago 2023',
     description:
-      'Com esse curso explorei as complexidades do java utilizando o spring boot e aplique os conhecimentos em mini projeto utilizando conceitos de API REST',
+      'Aprendi a desenvolver APIs REST com Spring Boot, aplicando conceitos de arquitetura de software e boas práticas de desenvolvimento.',
     image:
       'https://i.postimg.cc/MZcHfC0f/Screenshot-2023-11-30-at-07-42-40-Kaue-de-Matos-Oliveira-Forma-o-Java-e-Spring-Boot-Alura-cer.png',
-    tags: ['Docker'],
+    tags: ['Java', 'Spring Boot', 'APIs REST'],
   },
   {
     id: 3,
     title: 'Microsserviços com Spring Cloud',
-    date: 'Nov 2023 - Nov 2023',
+    date: 'Nov 2023',
     description:
-      'Implementei uma arquitetura de microsserviços usando o Spring Cloud, aprimorando a escalabilidade e resiliência de uma plataforma de E-commerce projetada para atender a diversas necessidades comerciais.',
+      'Implementei uma arquitetura de microsserviços utilizando Spring Cloud, garantindo escalabilidade e resiliência para aplicações distribuídas.',
     image:
       'https://i.postimg.cc/267wQqNT/UC-3ae769ca-d185-458d-aa7c-d71a6aa561df.jpg',
-    tags: ['Docker'],
+    tags: ['Spring Cloud', 'Java', 'Microsserviços', 'APIs REST'],
   },
   {
     id: 4,
-    title: 'JavaScript ES6',
+    title: 'JavaScript ES6 e Desenvolvimento Web',
     date: 'Fev 2023 - Ago 2023',
     description:
-      'Exploreo os recursos avançados do JavaScript (ES6) e os apliquei no desenvolvimento de uma plataforma de E-commerce dinâmica, incorporando HTML, CSS e Ajax para uma experiência do usuário perfeita.',
+      'Aprofundei meus conhecimentos em JavaScript moderno (ES6), HTML, CSS e Ajax para criar aplicações web interativas e dinâmicas.',
     image:
       'https://i.postimg.cc/cHF31fSq/Screenshot-2023-11-30-at-07-46-40-doc-pdf.png',
     tags: ['JavaScript', 'HTML', 'CSS', 'Ajax'],
@@ -41,65 +41,65 @@ export const certifications = [
   {
     id: 5,
     title: 'Docker para Desenvolvedores',
-    date: 'jun 2023 - Nov 2023',
+    date: 'Jun 2023 - Nov 2023',
     description:
-      'Nesse curso estudei os fundamentos do Docker, aprimorando habilidades em containerização para otimizar implantação e gerenciamento de aplicativos em diversos ambientes de computação.',
+      'Dominei os conceitos fundamentais de containerização com Docker, otimizando a implantação e escalabilidade de aplicações.',
     image: 'https://i.postimg.cc/gjq2kWRx/Screenshot-2023-11-30-074814.png',
-    tags: ['Docker'],
+    tags: ['Docker', 'Containerização'],
   },
   {
     id: 6,
-    title: 'Linux',
+    title: 'Linux e Administração de Sistemas',
     date: 'Fev 2023 - Abril 2023',
     description:
-      'Adquiri conhecimentos fundamentais de Linux e operações no terminal, essenciais para o desenvolvimento eficiente de software e administração do sistema.',
+      'Desenvolvi habilidades essenciais em Linux e operações no terminal, fundamentais para administração de sistemas e desenvolvimento de software.',
     image: 'https://i.postimg.cc/85FV0Vw2/Screenshot-2023-11-30-075251.png',
-    tags: ['Linux', 'Terminal'],
+    tags: ['Linux', 'Shell', 'Administração de Sistemas'],
   },
   {
     id: 7,
     title: 'Modelagem de Banco de Dados',
-    date: 'Abr 2023 - Man 2023',
+    date: 'Abr 2023 - Mai 2023',
     description:
-      'Nesse curso tive opotunidade de desenvolver as minhas habilidades em modelagem de banco de dados, essenciais para criar estruturas eficientes no MySQL e compreender a modelagem do banco de dados.',
+      'Aprendi a projetar bancos de dados eficientes utilizando MySQL, aplicando modelagem relacional para otimizar consultas e estrutura de dados.',
     image: 'https://i.postimg.cc/jS9w1RhT/Screenshot-2023-11-30-075102.png',
-    tags: ['MySQL', 'Modelagem do banco de dados'],
+    tags: ['MySQL', 'Modelagem de Dados', 'Banco de Dados Relacional'],
   },
   {
     id: 8,
-    title: 'SQL',
-    date: 'Aug 2023 - Set 2023',
+    title: 'SQL e Manipulação de Dados',
+    date: 'Ago 2023 - Set 2023',
     description:
-      'Nesse curso tive a oportunidade de desenvolver minhas habilidades em SQL, aplicando consultas eficientes no MySQL para otimizar o acesso e manipulação de dados em bancos de dados relacionais.',
+      'Dominei consultas SQL para otimizar a manipulação e recuperação de dados em bancos relacionais, com foco em MySQL.',
     image: 'https://i.postimg.cc/1t7KCk4N/Screenshot-2023-11-30-074944.png',
-    tags: ['MySQL', 'SQL'],
+    tags: ['SQL', 'MySQL', 'Otimização de Consultas'],
   },
   {
     id: 9,
-    title: 'Node.js',
-    date: 'Aug 2023 - jan 2024',
+    title: 'Testes e Design Patterns com Node.js',
+    date: 'Ago 2023 - Jan 2024',
     description:
-      'Nesse curso tive a oportunidade de desenvolver minhas habilidades em nodejs, principalmente em teste unitarios e em teste de integração com jest, contudo também tive a oportunidade de ver como a design patters DDD e estrutura na aplicação e o seu respectivo objetivo.',
+      'Aprofundei conhecimentos em testes unitários e de integração com Jest, além de aplicar princípios de Design Patterns (DDD) no desenvolvimento backend com Node.js.',
     image: 'https://i.postimg.cc/t4G0nKN2/Screenshot-2024-04-30-190818.png',
-    tags: ['Nodejs', 'Typescript', 'jest'],
+    tags: ['Node.js', 'TypeScript', 'Jest', 'DDD'],
   },
   {
     id: 10,
-    title: 'Microservices with Spring Boot, Spring Cloud, Docker, K8s',
-    date: 'jan - fev 2024',
+    title: 'Arquitetura de Microsserviços com Spring Boot e Docker',
+    date: 'Jan - Fev 2024',
     description:
-      'Nesse curso desenvolvi um projeto prático, onde me possibilitou conhecer como realmente um arquitetura de microserviços pode ser estruturada e como isso se comporta em produção.',
+      'Desenvolvi uma arquitetura completa de microsserviços utilizando Spring Boot, Docker e Kubernetes, aplicando conceitos práticos para ambientes produtivos.',
     image:
       'https://i.postimg.cc/5t0wcDvS/Captura-de-tela-de-2024-02-05-06-52-29.png',
-    tags: ['Java', 'Docker', 'GitHub', 'Mysql'],
+    tags: ['Spring Boot', 'Microsserviços', 'Docker', 'Kubernetes'],
   },
   {
     id: 11,
-    title: 'React Js',
-    date: 'jan - fev 2024',
+    title: 'React.js e Desenvolvimento Frontend Moderno',
+    date: 'Jan - Fev 2024',
     description:
-      'Nesse curo tive a oportunidade de conhecer diversas tecnologias, incluindo bibliotecas que podem agilizar o desenvolvimento de aplicação que posteriormente irá para web',
+      'Aprendi a desenvolver aplicações web modernas com React.js, explorando bibliotecas como Next.js e Storybook para aprimorar a experiência do usuário.',
     image: 'https://i.postimg.cc/3JKJ0Drk/Screenshot-2024-04-30-190849.png',
-    tags: ['TypeScript', 'ReactJs', 'NextJs', 'StoryBook'],
+    tags: ['React.js', 'TypeScript', 'Next.js', 'Storybook'],
   },
 ];

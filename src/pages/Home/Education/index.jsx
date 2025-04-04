@@ -23,7 +23,7 @@ export function Education() {
         main: '#FFF',
       },
       secondary: {
-        main: '#febe0b',
+        main: '#009FE3',
       },
     },
   });
@@ -51,7 +51,7 @@ export function Education() {
                       style={{ color: theme.palette.primary.main }}
                     />
                     {index !== education.length && (
-                      <TimelineConnector style={{ background: '#febe0b' }} />
+                      <TimelineConnector style={{ background: '#009FE3' }} />
                     )}
                   </TimelineSeparator>
                 </TimelineItem>

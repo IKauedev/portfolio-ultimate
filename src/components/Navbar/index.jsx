@@ -35,7 +35,7 @@ export function Navbar() {
             style={{
               display: 'flex',
               alignItems: 'center',
-              color: 'white',
+              color: '#009FE3',
               cursor: 'pointer',
               textDecoration: 'none',
             }}
