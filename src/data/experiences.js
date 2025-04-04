@@ -1,6 +1,15 @@
 export const experiences = [
   {
     id: 1,
+    img: 'https://i.postimg.cc/zvtXStxM/Perola-2.jpg',
+    role: 'Engenheiro de Software Junior',
+    company: 'Porto',
+    date: 'Abr 2025 - atual',
+    desc: "",
+    skills: ['Java', 'Spring Boot', 'TypeScript', 'Angular', 'Docker', 'AWS'],
+  },
+  {
+    id: 2,
     img: 'https://i.postimg.cc/QM7khYD6/icon.jpg',
     role: 'Desenvolvedor Full-stack (SaaS)',
     company: 'Nova Software',
@@ -14,7 +23,7 @@ export const experiences = [
     skills: ['Java', 'Spring Boot', 'NestJS', 'TypeScript', 'Angular', 'React', 'Docker', 'AWS'],
   },
   {
-    id: 2,
+    id: 3,
     img: 'https://i.postimg.cc/qR4pYHW1/logo-live-ecommerce.jpg',
     role: 'Estagiário Back-end',
     company: 'Live Ecommerce',

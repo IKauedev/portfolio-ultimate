@@ -37,6 +37,6 @@ export const education = [
     school: 'Rocketseat',
     date: 'Mar 2024 - Mar 2025',
     desc: 'Neste curso, tive a oportunidade de mergulhar no TypeScript para aprimorar o desenvolvimento Front-end com o ReactJS, NodeJS e o framework NestJS.',
-    degree: 'Inglês - Língua e Literatura',
+    degree: 'Desenvolvimento Front-end & Back-end',
   },
 ];

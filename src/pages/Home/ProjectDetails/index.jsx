@@ -90,7 +90,7 @@ export function ProjectDetails({ openModal, setOpenModal }) {
             ) : (
               <>
                 <Button dull href={project?.github} target="_blank">
-                  Visualizar Código
+                  {project?.github ? 'Visualizar Código' : 'Link Indisponível'}
                 </Button>
                 <Button href={project?.webapp} target="_blank">
                   {project?.webapp ? 'Visualizar Projeto' : 'Link Indisponível'}

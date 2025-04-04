@@ -49,4 +49,16 @@ export const projects = [
     github: 'https://github.com/IKauedev/Nova-auth',
     webapp: false,
   },
+  {
+    id: 5,
+    title: 'Tellink MQTT Consumer Station',
+    date: 'Jul 2023 - Ago 2023',
+    description:
+      'Aplicação de consumo de dados climáticos via MQTT, desenvolvida para processar e armazenar informações de múltiplas estações meteorológicas em tempo real. Utiliza fila e processamento em lote para garantir performance e escalabilidade. Projeto construído em parceria com a Tellink Engenharia.',
+    image: 'https://i.postimg.cc/85CCJgHW/Captura-de-tela-2025-04-04-201640.png',
+    tags: ['Node.js', 'Typescript', 'MQTT', 'MongoDB', 'AWS', 'Docker', 'wordpress', 'PHP'],
+    category: 'Back-end',
+    github: '',
+    webapp: 'https://www.tellinkengenharia.com.br/',
+  },
 ];
