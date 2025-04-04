@@ -21,14 +21,14 @@ export const projects = [
     image: 'https://i.postimg.cc/wvcJBQvF/imagem.png',
     tags: ['React.js', 'Tailwind CSS', 'Java', 'Spring Boot'],
     category: 'Full Stack',
-    github: 'https://github.com/Nova-Software-Organization/Nova-core-legacy',
+    github: 'https://github.com/IKauedev/nine-ecommerce-back-end',
     webapp: 'https://delivery-react-gp4llt9kh-IKauedev.vercel.app/',
     fullstack: true,
   },
   {
     id: 3,
-    title: 'Nova-Mail: Sistema de Envio de E-mails',
-    date: 'Jun 2023 - Jul 2023',
+    title: 'Microserviço Envio de E-mails',
+    date: 'Nov 2024 - Jun 2024',
     description:
       'Módulo de envio de e-mails da plataforma Nova Software, utilizando RabbitMQ para mensageria e JMail para envio eficiente e seguro. Segue padrões de arquitetura orientada a serviços e boas práticas com Design Patterns e DDD.',
     image: 'https://i.postimg.cc/Bv8Wk2sw-/OIG4.jpg',
@@ -39,20 +39,20 @@ export const projects = [
   },
   {
     id: 4,
-    title: 'Nova-Auth: Autenticação e Autorização Segura',
-    date: 'Jun 2023 - Jul 2023',
+    title: 'Microserviço de Autenticação e Autorização Segura',
+    date: 'Nov 2024 - Jun 2024',
     description:
       'Sistema de autenticação e autorização para a Nova Software, implementado com Spring Security e JWT. Utiliza padrões de arquitetura como DDD para garantir escalabilidade e segurança na autenticação de usuários.',
     image: 'https://i.postimg.cc/1XRcfcW9/OIG3-1.jpg',
-    tags: ['Spring Security', 'Java', 'Spring Boot', 'JWT', 'DDD'],
+    tags: ['Spring Security', 'Java', 'Spring Boot', 'JWT', 'Domain Drive Design (DDD)'],
     category: 'Back-end',
-    github: 'https://github.com/IKauedev/Nova-auth',
+    github: 'https://github.com/IKauedev/nine-auth-ecommerce',
     webapp: false,
   },
   {
     id: 5,
-    title: 'Tellink MQTT Consumer Station',
-    date: 'Jul 2023 - Ago 2023',
+    title: 'Tellink MQTT Consumer Station (Freelancer)',
+    date: 'Jul 2024 - Ago 2024',
     description:
       'Aplicação de consumo de dados climáticos via MQTT, desenvolvida para processar e armazenar informações de múltiplas estações meteorológicas em tempo real. Utiliza fila e processamento em lote para garantir performance e escalabilidade. Projeto construído em parceria com a Tellink Engenharia.',
     image: 'https://i.postimg.cc/85CCJgHW/Captura-de-tela-2025-04-04-201640.png',
@@ -61,4 +61,30 @@ export const projects = [
     github: '',
     webapp: 'https://www.tellinkengenharia.com.br/',
   },
+  {
+    id: 6,
+    title: 'E-commerce Completo: Back-End & Front-End',
+    date: 'Nov 2023 - Jun 2024',
+    description:
+      'Plataforma de e-commerce desenvolvida com foco em aprendizado prático de aplicações completas. O projeto utiliza Spring Boot no back-end, com autenticação via Spring Security e integração com sistemas de pagamento(Simulação). O front-end é construído com Next.js, oferecendo uma experiência moderna e responsiva para o usuário.',
+    image: 'https://i.postimg.cc/cLVjtRBc/nova-software-ecommerce.png',
+    tags: ['Java', 'Spring Boot', 'Spring Security', 'Next.js', 'E-commerce', 'Autenticação', 'Integração de Pagamentos'],
+    category: 'Full Stack',
+    github: 'https://github.com/IKauedev/nine-ecommerce-back-end',
+    webapp: 'https://nova-software-ecommerce-next.vercel.app/',
+    fullstack: true,
+  },
+  {
+    id: 7,
+    title: 'Nova Software Tag - Gerador de entiquetas ZPL (Freelancer)',
+    date: 'Jan 2025 - Mar 2025',
+    description:
+      'Nova Tag é uma ferramenta desktop que auxilia na criação e impressão de etiquetas personalizadas no formato ZPL (Zebra Programming Language). Ideal para empresas que precisam gerar etiquetas para produtos, logística e identificação de itens.',
+    image: 'https://i.postimg.cc/Kv1J7Kzp/Nova-software-Tag.png',
+    tags: ['Python', 'ZPL', 'SQLITE', 'Desktop'],
+    category: 'Full Stack',
+    github: 'https://github.com/IKauedev/nova-tag-zpl',
+    webapp: '',
+    fullstack: true,
+  }
 ];
