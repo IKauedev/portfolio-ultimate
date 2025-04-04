@@ -8,7 +8,7 @@ export const projects = [
     image: 'https://i.postimg.cc/3xVNXjVv/3dcfd26a-e7c4-4147-af66-58eeee380e75.jpg',
     tags: ['Spring Security', 'Java', 'Spring Boot', 'AWS'],
     category: 'Full Stack',
-    github: 'https://github.com/iKaueMatos/twitter-microservices',
+    github: 'https://github.com/IKauedev/twitter-microservices',
     webapp: 'https://x-twitter-front-end.vercel.app/logout',
     fullstack: true,
   },
@@ -22,7 +22,7 @@ export const projects = [
     tags: ['React.js', 'Tailwind CSS', 'Java', 'Spring Boot'],
     category: 'Full Stack',
     github: 'https://github.com/Nova-Software-Organization/Nova-core-legacy',
-    webapp: 'https://delivery-react-gp4llt9kh-ikauematos.vercel.app/',
+    webapp: 'https://delivery-react-gp4llt9kh-IKauedev.vercel.app/',
     fullstack: true,
   },
   {
@@ -34,7 +34,7 @@ export const projects = [
     image: 'https://i.postimg.cc/Bv8Wk2sw-/OIG4.jpg',
     tags: ['JMail', 'Java', 'Spring Boot', 'RabbitMQ', 'DDD'],
     category: 'Back-end',
-    github: 'https://github.com/iKaueMatos/Nova-mail',
+    github: 'https://github.com/IKauedev/Nova-mail',
     webapp: false,
   },
   {
@@ -46,7 +46,7 @@ export const projects = [
     image: 'https://i.postimg.cc/1XRcfcW9/OIG3-1.jpg',
     tags: ['Spring Security', 'Java', 'Spring Boot', 'JWT', 'DDD'],
     category: 'Back-end',
-    github: 'https://github.com/iKaueMatos/Nova-auth',
+    github: 'https://github.com/IKauedev/Nova-auth',
     webapp: false,
   },
 ];

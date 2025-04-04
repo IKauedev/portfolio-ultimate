@@ -4,8 +4,8 @@ export const ButtonAccept = styled.button`
   width: 100%;
   max-width: 200px;
   padding: 10px;
-  background-color: ${({ theme }) => theme.white};
-  color: ${({ theme }) => theme.text_black};
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
   font-size: 14px;
   font-weight: 700;
   border: none;
