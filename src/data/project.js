@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 3,
     title: 'Microserviço Envio de E-mails',
-    date: 'Nov 2024 - Jun 2024',
+    date: 'Nov 2023 - Jun 2024',
     description:
       'Módulo de envio de e-mails da plataforma Nova Software, utilizando RabbitMQ para mensageria e JMail para envio eficiente e seguro. Segue padrões de arquitetura orientada a serviços e boas práticas com Design Patterns e DDD.',
     image: 'https://i.postimg.cc/Bv8Wk2sw-/OIG4.jpg',
@@ -40,7 +40,7 @@ export const projects = [
   {
     id: 4,
     title: 'Microserviço de Autenticação e Autorização Segura',
-    date: 'Nov 2024 - Jun 2024',
+    date: 'Nov 2023 - Jun 2024',
     description:
       'Sistema de autenticação e autorização para a Nova Software, implementado com Spring Security e JWT. Utiliza padrões de arquitetura como DDD para garantir escalabilidade e segurança na autenticação de usuários.',
     image: 'https://i.postimg.cc/1XRcfcW9/OIG3-1.jpg',
