@@ -44,7 +44,7 @@ export const Card = styled.div`
   }
 
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-width: 80%;
     min-height: auto;
   }
 `;

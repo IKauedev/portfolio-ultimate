@@ -96,10 +96,6 @@ export const Button = styled.button`
   width: 20%;
   text-decoration: none;
   text-align: center;
-  // background: hsla(271, 100%, 50%, 1);
-  // background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  // background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  // background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
   background: ${({ theme }) => theme.black};
   padding: 13px 16px;
   margin-top: 5px;

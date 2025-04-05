@@ -185,7 +185,7 @@ export const ResumeButton = styled.a`
     animation: pulse 2s infinite alternate ease-in-out;
 
     &:hover {
-        transform: scale(1.1); /* Aumenta o efeito ao passar o mouse */
+        transform: scale(1.1);
         transition: all 0.4s ease-in-out;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
         filter: brightness(1.1);
@@ -194,11 +194,10 @@ export const ResumeButton = styled.a`
     }
 
     @media (max-width: 640px) {
-        padding: 12px 0;
+        padding: 22px;
         font-size: 18px;
     } 
 
-    /* Define a animação de escala */
     @keyframes pulse {
         0% {
             transform: scale(1);
